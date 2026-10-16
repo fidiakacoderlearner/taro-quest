@@ -16,7 +16,11 @@ export default defineConfig({
     {
       command: 'cd .. && npm run start',
       port: 5002,
-      reuseExistingServer: true,
+      // Sengaja false: server API membaca .env (database) saat start. Bila server
+      // lama dibiarkan terpakai, test bisa menulis ke database yang salah
+      // (mis. produksi). Lebih baik gagal keras — jalankan `npm run e2e` di root
+      // yang membebaskan port dulu.
+      reuseExistingServer: false,
       timeout: 30000,
     },
     {

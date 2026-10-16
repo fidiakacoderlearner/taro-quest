@@ -24,6 +24,11 @@ dev/produksi, dan pembersihan otomatis data uji E2E.
 - **Playwright `globalTeardown`** (`client/tests/global-teardown.ts`) —
   setiap run E2E selesai (lulus maupun gagal) script di atas dijalankan
   otomatis, sehingga database tidak pernah menumpuk sampah uji antar run.
+- **Pengaman E2E** (`client/tests/free-ports.mjs`, `npm run e2e`) — membebaskan
+  port 5002/5174 dari server lama sebelum test dijalankan, dan
+  `reuseExistingServer` untuk server API dinonaktifkan. Mencegah Playwright
+  memakai server lama yang masih membaca `.env` sebelumnya — akar penyebab
+  sampah uji sempat masuk ke database produksi.
 
 ### Diubah
 
