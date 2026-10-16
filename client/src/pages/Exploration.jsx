@@ -273,10 +273,10 @@ export default function Exploration() {
         <div className="w-full shrink-0">
           <div className="mb-2 flex items-center justify-between gap-2 md:mb-2.5 md:gap-3 lg:mb-2 lg:gap-2 xl:mb-3 xl:gap-4 2xl:mb-4">
             <div className="min-w-0">
-              <h1 className="font-display text-lg font-bold text-plum-900 drop-shadow-xs md:text-xl lg:text-lg xl:text-2xl 2xl:text-3xl">
+              <h1 className="font-display text-lg font-bold text-white [text-shadow:0_4px_18px_rgba(43,22,74,0.6)] md:text-xl lg:text-lg xl:text-2xl 2xl:text-3xl">
                 {isReview ? t('exploration.reviewTitle') : t('exploration.title')}
               </h1>
-              <p className="flex flex-wrap items-center gap-1 text-[10px] font-semibold text-plum-700 md:gap-1.5 md:text-xs lg:gap-1 lg:text-[10px] xl:gap-2 xl:text-xs 2xl:gap-2.5 2xl:text-sm">
+              <p className="flex flex-wrap items-center gap-1 text-[10px] font-semibold text-white [text-shadow:0_2px_10px_rgba(43,22,74,0.7)] md:gap-1.5 md:text-xs lg:gap-1 lg:text-[10px] xl:gap-2 xl:text-xs 2xl:gap-2.5 2xl:text-sm">
                 {isReview
                   ? t('exploration.reviewSubtitle')
                   : t('exploration.step', { current: index + 1, total: STORY.length })}

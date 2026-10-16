@@ -117,7 +117,7 @@ export default function About() {
           <span className="rounded-full bg-lilac px-4 py-1 text-xs font-bold uppercase tracking-widest text-plum-800">
             {t('nav.about')}
           </span>
-          <h1 className="mt-3 font-display text-3xl font-bold text-plum-800 md:text-4xl">
+          <h1 className="mt-3 font-display text-3xl font-bold text-white [text-shadow:0_4px_18px_rgba(43,22,74,0.6)] md:text-4xl">
             {t('about.title')}
           </h1>
         </div>

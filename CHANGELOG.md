@@ -24,6 +24,19 @@ Penyempurnaan visual halaman publik, popup kuis, dan sponsor.
   latar — di atas syarat WCAG AA.
 - **Watermark mobile di Login** berganti dari `text-plum-800/50` (gelap, tak
   terbaca di latar baru) menjadi `text-white/70`.
+- **Teks yang menempel langsung di latar dibuat putih** agar terbaca di atas
+  latar ungu: sapaan "Hi, {nama}" (`Home.jsx`), judul halaman About
+  (`About.jsx`), judul + subjudul step (`Exploration.jsx`), judul + subjudul
+  (`Evaluation.jsx`), dan hint "Lengkapi semua jawaban essai" (`ReviewPage.jsx`).
+  Memakai `text-white` + `text-shadow` ungu gelap
+  (`0_4px_18px_rgba(43,22,74,0.6)` untuk judul besar, `0_2px_10px_rgba(43,22,74,0.7)`
+  untuk teks kecil) — pola yang sama dengan Landing/Login. `drop-shadow-xs` pada
+  kedua judul diganti (`text-shadow` saja). Kontras 6.44:1 median dan 4.86:1
+  kasus terburuk. Teks di dalam komponen yang punya background sendiri (kartu
+  `bg-[#e9dafb]` Home, panel detail About `bg-white`, layar hasil Evaluasi,
+  kartu Review `bg-white/90`, kartu dialog `bg-[#f0e4fc]`, banner konteks
+  `bg-[#d6b4f2]/50`, label mesin `bg-white/95`, badge pill) **tidak** diubah.
+  Hero Landing tetap `text-cream` (sudah kontras).
 
 ### Ditambahkan
 

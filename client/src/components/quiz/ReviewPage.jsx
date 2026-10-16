@@ -57,7 +57,7 @@ export default function ReviewPage({ items, initialValues, saving, error, onSave
         </div>
 
         {!allFilled && (
-          <p className="text-center text-xs font-semibold text-plum-500">{t('exploration.reviewRequired')}</p>
+          <p className="text-center text-xs font-semibold text-white/95 [text-shadow:0_2px_10px_rgba(43,22,74,0.7)]">{t('exploration.reviewRequired')}</p>
         )}
       </div>
     </div>

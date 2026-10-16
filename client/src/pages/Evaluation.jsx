@@ -171,10 +171,10 @@ export default function Evaluation() {
           <div className="w-full shrink-0">
             <div className="mb-3 flex items-center justify-between gap-4 lg:mb-2 lg:gap-3 xl:mb-3 2xl:gap-6">
               <div>
-                <h1 className="font-display text-2xl font-bold text-plum-900 drop-shadow-xs lg:text-xl xl:text-2xl 2xl:text-3xl">
+                <h1 className="font-display text-2xl font-bold text-white [text-shadow:0_4px_18px_rgba(43,22,74,0.6)] lg:text-xl xl:text-2xl 2xl:text-3xl">
                   {t('evaluation.title')}
                 </h1>
-                <p className="text-xs font-semibold text-plum-700 lg:text-[11px] xl:text-xs 2xl:text-sm">
+                <p className="text-xs font-semibold text-white [text-shadow:0_2px_10px_rgba(43,22,74,0.7)] lg:text-[11px] xl:text-xs 2xl:text-sm">
                   {t('evaluation.question', { current: current + 1, total })}
                 </p>
               </div>

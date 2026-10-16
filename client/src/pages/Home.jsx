@@ -80,7 +80,7 @@ export default function Home() {
       <Navbar />
       <main className="mx-auto flex w-full max-w-6xl flex-1 flex-col justify-center px-4 py-10">
         <section className="mb-6 text-center">
-          <p className="font-display text-4xl font-bold text-plum-800 md:text-5xl">
+          <p className="font-display text-4xl font-bold text-white [text-shadow:0_4px_18px_rgba(43,22,74,0.6)] md:text-5xl">
             {t('home.greeting').replace('{name}', user?.name || '')}
           </p>
         </section>
