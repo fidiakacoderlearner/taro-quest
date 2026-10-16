@@ -10,6 +10,7 @@
     "build": "npm --prefix client run build",
     "start": "npm --prefix server run start",
     "init-db": "npm --prefix server run init-db",
+    "db:clean": "npm --prefix server run clean-db",
     "wireframes": "node tools/render-wireframes.mjs",
     "figma": "node tools/build-figma-html.mjs"
   },

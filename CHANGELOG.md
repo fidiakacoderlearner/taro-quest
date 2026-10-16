@@ -3,6 +3,38 @@
 Semua perubahan penting pada proyek dicatat di sini. Format mengikuti
 [Keep a Changelog](https://keepachangelog.com/id-ID/1.1.0/).
 
+## [1.28.0] — 2026-10-16
+
+Prasyarat rilis lomba: pratinjau tautan (Open Graph), pemisahan database
+dev/produksi, dan pembersihan otomatis data uji E2E.
+
+### Ditambahkan
+
+- **15 tag Open Graph + Twitter di `client/index.html`** — `og:type`,
+  `og:site_name`, `og:title`, `og:description`, `og:url`, `og:image`
+  (lengkap dengan `:width`/`:height`/`:alt`), `og:locale`, plus
+  `twitter:card summary_large_image`, `twitter:title`, `twitter:description`,
+  `twitter:image`, `twitter:image:alt`. Semua URL memakai absolut
+  `https://taro-quest.vercel.app/` sehingga pratinjau tautan di WhatsApp,
+  X, maupun Discord menampilkan judul, ringkasan, dan `og-image.jpg`
+  (screenshot asli halaman Landing, 1200×630).
+- **`npm run db:clean`** (`server/clean-db.js`) — bersihkan data uji secara
+  manual: user dengan email `*@test.com` dan kelas bernama `Test %`.
+  Idempoten, aman dijalankan berulang kali.
+- **Playwright `globalTeardown`** (`client/tests/global-teardown.ts`) —
+  setiap run E2E selesai (lulus maupun gagal) script di atas dijalankan
+  otomatis, sehingga database tidak pernah menumpuk sampah uji antar run.
+
+### Diubah
+
+- **Database dev terpisah dari produksi** — `.env` lokal kini menunjuk ke
+  branch Neon `dev`, sedangkan `DATABASE_URL` di Vercel tetap pada branch
+  produksi. Data demo terisolasi dari eksperimen E2E.
+- **Pembersihan awal** — sampah E2E lama dihapus dari kedua database
+  (produksi maupun dev) sebelum pemisahan: user 48 → 4, kelas 23 → 1;
+  data demo (4 akun, kelas XI-A) dan riwayat jawaban (11 jawaban, 3
+  attempt eksplorasi, 3 attempt evaluasi) tetap utuh.
+
 ## [1.27.0] — 2026-10-16
 
 Persiapan lomba internasional: framing netral (tidak terikat kurikulum nasional),
