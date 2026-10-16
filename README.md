@@ -136,7 +136,39 @@ Buka browser ke: **`http://localhost:5174`**
 | `npm run build` | Build production client (verifikasi syntax, output ke `client/dist/`) |
 | `npm run start` | Jalankan hanya server production (perlu `npm run build` dulu) |
 | `npm run init-db` | Inisialisasi ulang database (schema + seed + backfill) |
+| `npm run db:clean` | Hapus data uji E2E (user `*@test.com`, kelas `Test %`) |
+| `npm run e2e` | Bebaskan port 5002/5174 lalu jalankan test Playwright |
 | `npm run install:all` | Install ulang semua dependency server & client |
+
+---
+
+## Testing E2E (Playwright)
+
+```bash
+npm run e2e
+```
+
+Menjalankan 26 test di `client/tests/specs/`. Perintah ini membebaskan port
+5002 & 5174 lebih dulu, lalu Playwright menyalakan server + client sendiri
+sehingga selalu memakai `.env` terkini.
+
+Butuh **Google Chrome** terpasang. Bila browser bawaan Playwright belum
+di-download, pilih channel `chrome`:
+
+```powershell
+# Windows PowerShell
+$env:PLAYWRIGHT_CHANNEL='chrome'; npm run e2e
+```
+
+```bash
+# Linux / macOS / Git Bash
+PLAYWRIGHT_CHANNEL=chrome npm run e2e
+```
+
+Test menulis data uji ke database pada `.env`, lalu **menghapusnya otomatis** —
+tanpa perlu hapus manual. `client/tests/global-setup.ts` membersihkan sisa run
+sebelumnya dan mencetak host database yang dipakai; `client/tests/global-teardown.ts`
+membersihkan setelah run selesai (lulus maupun gagal).
 
 ---
 
@@ -272,6 +304,7 @@ Semua teks cerita/soal/penjelasan/opsi di `client/src/i18n/{en,id}.json` di bawa
 - Cek `DATABASE_URL` format benar (utf8, tanpa newline)
 
 ### Port 5002 / 5174 sudah dipakai
+- `npm run e2e` membebaskan kedua port ini otomatis sebelum test dijalankan
 - Ganti port di `server/index.js` (server) atau `vite.config.js` (client) jika perlu
 - Atau hentikan proses lain yang pakai port tersebut
 
