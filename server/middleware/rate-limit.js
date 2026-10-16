@@ -2,7 +2,10 @@ import rateLimit, { ipKeyGenerator } from 'express-rate-limit';
 
 const WINDOW_15M = 15 * 60 * 1000;
 const WINDOW_1H = 60 * 60 * 1000;
-const PER_IP_LIMIT = 75;
+// Batas per-IP sengaja longgar: saat penjurian/demo, banyak orang bisa masuk
+// dari satu jaringan (NAT) yang sama. Proteksi brute-force tetap dipegang
+// FAILED_LOGIN_LIMIT per email+IP di bawah.
+const PER_IP_LIMIT = 300;
 const FAILED_LOGIN_LIMIT = 5;
 
 const RATE_LIMIT_ERROR = 'Too many requests';

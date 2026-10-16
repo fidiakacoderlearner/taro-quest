@@ -263,11 +263,15 @@ Taruh gambar di `client/src/assets/` — lihat
 
 Kalau file belum ada → aplikasi memakai placeholder emoji/gradient otomatis (web tetap jalan).
 
-**Logo Sponsor (Login Page)**: 2 file placeholder sudah ada di `client/src/assets/`:
+**Logo Sponsor (Landing & Login)**: 3 file ada di `client/src/assets/`
+(dirender komponen `SponsorLogos.jsx`, tinggi seragam `h-6 sm:h-8`):
 - `logo-kemendiktisaintek.webp`
 - `logo-unri.webp`
+- `logo-dmgc.webp`
 
-Ganti dengan file asli Anda (nama file sama) → otomatis terpakai.
+Ganti dengan file asli Anda (nama file sama) → otomatis terpakai. Karena tinggi
+render seragam, potong ruang kosong transparan di atas/bawah gambar agar logo
+tampak besar (lihat `python`/Pillow: `Image.crop(alpha.getbbox())`).
 
 **Favicon**: file ada di `client/public/` (`favicon.webp`, `favicon-32.png`,
 `apple-touch-icon.png`) dan di-link dari `client/index.html`. Vite menyalin folder
@@ -283,6 +287,37 @@ file itu (atau jalankan ulang konversi dari `client/src/assets/taro.webp`).
 - Drag & Drop Experiment: `client/src/data/drag.js`
 
 Semua teks cerita/soal/penjelasan/opsi di `client/src/i18n/{en,id}.json` di bawah namespace `story.*`, `quiz.*`, `exploration.*`, `evaluation.*`.
+
+---
+
+## Tim & Kredit
+
+Dikembangkan oleh tim **teaMate**.
+
+| Peran | Nama | Afiliasi |
+| ----- | ---- | -------- |
+| Ketua / Developer | `[Nama Anggota 1 — lengkapi]` | `[Sekolah/Universitas — lengkapi]` |
+| Anggota | `[Nama Anggota 2 — lengkapi]` | `[—]` |
+| Anggota | `[Nama Anggota 3 — lengkapi]` | `[—]` |
+| Pembimbing | `[Nama Pembimbing — lengkapi]` | `[—]` |
+
+- **Negara**: `[Indonesia — lengkapi]`
+- **Kontak**: `[email@contoh.com — lengkapi]`
+
+### Dukungan & Sponsor
+
+- Kementerian Pendidikan Tinggi, Sains, dan Teknologi (Kemendiktisaintek)
+- Universitas Riau (UNRI)
+- `[DMGC — lengkapi kepanjangan]`
+
+> Placeholder `[...]` mohon diganti sebelum pengumpulan.
+
+---
+
+## Lisensi
+
+Dirilis di bawah **MIT License** — lihat [`LICENSE`](LICENSE).
+Materi pembelajaran (teks cerita, soal, dan penjelasan) tetap milik tim teaMate.
 
 ---
 

@@ -390,6 +390,7 @@ export default function TeacherDashboard() {
                     value={search}
                     onChange={(e) => setSearch(e.target.value)}
                     placeholder={t('teacher.searchPlaceholder')}
+                    aria-label={t('teacher.searchLabel')}
                     className="w-full max-w-xs rounded-2xl border border-plum-200 bg-white px-4 py-2.5 text-sm text-plum-800 placeholder-plum-400 outline-none transition focus:border-plum-500"
                   />
                 </div>

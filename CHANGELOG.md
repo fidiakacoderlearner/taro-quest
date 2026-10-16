@@ -3,6 +3,58 @@
 Semua perubahan penting pada proyek dicatat di sini. Format mengikuti
 [Keep a Changelog](https://keepachangelog.com/id-ID/1.1.0/).
 
+## [1.28.1] — 2026-10-16
+
+Polesan akhir menjelang penjurian: audit responsif & aksesibilitas, perbaikan
+tampilan logo sponsor, pelonggaran limit auth, dan kelengkapan dokumen rilis.
+
+### Ditambahkan
+
+- **`LICENSE`** — MIT License (holding: `teaMate`).
+- **Bagian "Tim & Kredit" dan "Lisensi" di README** — tabel anggota tim
+  (placeholder untuk diisi), afiliasi, daftar sponsor, dan tautan lisensi.
+- **`aria-label` untuk kotak Cari Teacher Dashboard** — sebelumnya hanya
+  mengandalkan `placeholder` (bukan nama aksesibel menurut WCAG). Key i18n
+  `teacher.searchLabel` ditambahkan di `en.json` **dan** `id.json`.
+
+### Diubah
+
+- **Logo DMGC dipotong ruang kosongnya** — sumber 500×500 dengan 110px ruang
+  kosong di atas dan 156px di bawah (hanya 47% tinggi terisi) sehingga tampak
+  kecil meski dirender setinggi logo lain (`h-6 sm:h-8`). Setelah dipotong ke
+  bounding box konten: **398×234** (rasio 1.701). Konten kini memenuhi tinggi
+  render → tinggi tampak **~15px → 32px** (~2× lebih besar). Ukuran file justru
+  turun: 24320 → 23522 bytes (WebP q90). Dua logo lain sudah hampir penuh
+  (UNRI 94%, Kemendiktisaintek 100%) sehingga dibiarkan.
+- **Limit auth per-IP 75 → 300** (`server/middleware/rate-limit.js`). Saat
+  penjurian/demo, banyak orang dapat masuk dari satu jaringan (NAT) yang sama.
+  Proteksi brute-force tetap dipegang `FAILED_LOGIN_LIMIT = 5` (per email + IP,
+  hanya menghitung login gagal).
+- **`SponsorLogos.jsx` dirapikan** — cabang `sponsor-logos` (class CSS-nya sudah
+  dihapus di 1.28.0) dibuang; komponen kini selalu memakai tata letak inline.
+  Sebelumnya memanggilnya tanpa prop `inline` akan merender logo seukuran asli.
+
+### Diperbaiki
+
+- **Gambar latar dekoratif** — dipastikan tetap terpotong kontainer dan tidak
+  memunculkan scroll horizontal (diverifikasi lewat audit).
+
+### Diverifikasi (audit mobile + a11y)
+
+Playwright, 7 halaman (Landing, Login, Home, About, Exploration, Evaluation,
+Teacher) × 2 viewport (390×844, 768×1024):
+
+- **Tidak ada overflow horizontal** di satu pun kombinasi
+  (`scrollWidth == innerWidth`).
+- `img` tanpa `alt` = 0, tombol tanpa nama aksesibel = 0, input tanpa label = 0.
+- `html[lang] = "en"`, bahasa default pengunjung baru = Inggris.
+- Tabel Teacher yang lebih lebar dari layar ter-scroll di dalam
+  `overflow-x-auto` (bukan memotong halaman).
+
+Screenshot bahan submit (Landing, Login, Home, About, Exploration, Evaluation,
+Teacher — desktop 1440×900 + mobile 390×844, 14 gambar) disimpan lokal di
+`docs/screenshots/` (diabaikan git sesuai konvensi dokumen lomba).
+
 ## [1.28.0] — 2026-10-16
 
 Prasyarat rilis lomba: pratinjau tautan (Open Graph) dan pembersihan otomatis

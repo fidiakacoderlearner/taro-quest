@@ -50,7 +50,7 @@ export default function Landing() {
           {lang === 'en' ? 'ID' : 'EN'}
         </button>
         <div className="rounded-2xl bg-white/90 px-3 py-1.5 shadow-sm ring-1 ring-white/60 backdrop-blur">
-          <SponsorLogos inline />
+          <SponsorLogos />
         </div>
       </header>
 

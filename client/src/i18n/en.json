@@ -203,6 +203,7 @@
     "viewAnswers": "View answers",
     "close": "Close",
     "searchPlaceholder": "Search name or email...",
+    "searchLabel": "Search student",
     "noStudentsMatch": "No matching students",
     "showing": "Showing {from}–{to} of {total}",
     "prev": "Prev",

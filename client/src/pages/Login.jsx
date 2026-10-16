@@ -154,7 +154,7 @@ export default function Login() {
       </div>
 
       <div className="absolute right-4 top-4 z-20 rounded-xl border border-white/60 bg-white/90 px-3 py-2 shadow-md backdrop-blur">
-        <SponsorLogos inline />
+        <SponsorLogos />
       </div>
 
       <button

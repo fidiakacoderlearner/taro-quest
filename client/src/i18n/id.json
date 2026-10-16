@@ -204,6 +204,7 @@
     "viewAnswers": "Lihat jawaban",
     "close": "Tutup",
     "searchPlaceholder": "Cari nama atau email...",
+    "searchLabel": "Cari siswa",
     "noStudentsMatch": "Tidak ada siswa yang cocok",
     "showing": "Menampilkan {from}–{to} dari {total}",
     "prev": "Sebelumnya",
