@@ -1,0 +1,371 @@
+﻿{
+  "nav": {
+    "about": "Tentang",
+    "teacher": "Guru",
+    "logout": "Keluar"
+  },
+  "login": {
+    "welcome": "Selamat datang kembali!",
+    "join": "Mulai belajar",
+    "email": "Email",
+    "password": "Kata sandi",
+    "name": "Nama lengkap",
+    "signIn": "Masuk",
+    "signUp": "Daftar",
+    "switchToSignup": "Belum punya akun? Daftar",
+    "switchToLogin": "Sudah punya akun? Masuk",
+    "demoHint": "Demo guru: teacher@taroquest.com / teacher123 \n Demo siswa: student@taroquest.com / student123",
+    "emailPlaceholder": "kamu@sekolah.id",
+    "namePlaceholder": "Githa Sayang",
+    "classCode": "Kode kelas",
+    "classCodePlaceholder": "Masukkan kode kelas",
+    "role": "Daftar sebagai",
+    "roleStudent": "Murid",
+    "roleTeacher": "Guru",
+    "teacherInfo": "Guru tidak perlu kode kelas",
+    "showPassword": "Tampilkan kata sandi",
+    "hidePassword": "Sembunyikan kata sandi"
+  },
+"joinClass": {
+      "title": "Gabung Kelas",
+      "desc": "Masukkan kode kelas untuk bergabung",
+      "placeholder": "Masukkan kode kelas",
+      "join": "Gabung",
+      "back": "Kembali",
+      "error": "Kode kelas tidak valid atau sudah tidak berlaku"
+    },
+  "home": {
+    "greeting": "Hai, {name}",
+    "intro": "Selamat datang di Desa Talas! Hari ini kita akan menjelajahi komposisi fungsi lewat usaha keripik talas milik Bu Aza.",
+    "cards": {
+      "about": "Tentang",
+      "aboutDesc": "Cari tahu apa yang kita pelajari hari ini",
+      "exploration": "Eksplorasi",
+      "explorationDesc": "Ikuti Bu Aza lewat kedua mesinnya",
+      "evaluation": "Evaluasi",
+      "evaluationDesc": "Uji pemahamanmu di bagian akhir"
+    },
+    "start": "Mulai",
+    "locked": "Selesaikan tahap sebelumnya dulu"
+  },
+  "landing": {
+    "backHome": "Beranda",
+    "tagline": "Ayo berpetualang bersama Bu Aza & Bu Zia dan pecahkan misteri mesin keripik talas!",
+    "enter": "Masuk",
+    "enterHint": "Belum punya akun? Daftar di halaman masuk.",
+    "aboutTitle": "Apa itu Taro Quest?",
+    "aboutText": "Taro Quest adalah petualangan belajar matematika tentang komposisi fungsi. Kamu akan membantu Bu Aza dan Bu Zia mengubah talas menjadi keripik lewat mesin-mesin ajaib, lalu menyusun urutan mesin yang paling menguntungkan.",
+    "learnTitle": "Yang akan kamu pelajari",
+    "stepsTitle": "Cara bermain",
+    "step1Title": "Kenalan dulu",
+    "step1Desc": "Buka Tentang untuk tahu tujuan belajar kita.",
+    "step2Title": "Ikuti ceritanya",
+    "step2Desc": "Eksplorasi pabrik talas, coba mesinnya, dan susun fungsinya.",
+    "step3Title": "Uji pemahamanmu",
+    "step3Desc": "Jawab 5 soal evaluasi dan lihat skormu.",
+    "sponsorTitle": "Didukung oleh"
+  },
+  "about": {
+    "title": "Apa yang kita pelajari hari ini?",
+    "learningOutcomes": "Capaian Pembelajaran",
+    "learningObjectives": "Tujuan Pembelajaran",
+    "learningIndicators": "Indikator Pembelajaran",
+    "outcomesText": "Di akhir Fase F, peserta didik dapat mengidentifikasi fungsi invers, komposisi fungsi, dan transformasi fungsi untuk memodelkan situasi dunia nyata menggunakan fungsi yang sesuai (linear, kuadrat, eksponensial).",
+    "objectives": [
+      "Peserta didik dapat menerapkan konsep fungsi komposisi pada masalah kontekstual melalui kegiatan diskusi kelompok yang melibatkan minimal dua fungsi.",
+      "Peserta didik dapat menganalisis sifat-sifat fungsi komposisi secara tepat melalui kegiatan eksplorasi Desa Talas."
+    ],
+    "indicators": [
+      "1.1 Peserta didik dapat memodelkan masalah kontekstual sebagai fungsi matematika yang sesuai.",
+      "1.2 Peserta didik dapat menentukan komposisi minimal dua fungsi berdasarkan model matematika yang telah dibuat.",
+      "1.3 Peserta didik dapat menerapkan hasil komposisi fungsi untuk menyelesaikan masalah kontekstual secara tepat melalui diskusi kelompok.",
+      "2.1 Peserta didik dapat membandingkan sifat-sifat fungsi komposisi yang diidentifikasi pada setiap tahap proses.",
+      "2.2 Peserta didik dapat menyimpulkan sifat-sifat fungsi komposisi secara tepat berdasarkan hasil kegiatan eksplorasi mereka."
+    ],
+    "outcomesDesc": "Yang bisa kamu lakukan setelah pembelajaran ini",
+    "objectivesDesc": "Tujuan yang akan kamu capai di pembelajaran ini",
+    "indicatorsDesc": "Bukti bahwa kamu sudah belajar dalam pembelajaran ini",
+    "read": "Baca",
+    "back": "Kembali",
+    "backToHome": "Kembali ke Beranda"
+  },
+  "exploration": {
+    "title": "Eksplorasi",
+    "step": "Langkah {current} dari {total}",
+    "writeAnswer": "Tulis jawabanmu di sini...",
+    "saveAnswer": "Simpan jawaban",
+    "edit": "Edit",
+    "saved": "Tersimpan",
+    "savedQuestion": "Soal Tersimpan {n}/{total}",
+    "continue": "Lanjut",
+    "correct": "Benar!",
+    "taro": "Talas",
+    "wrong": "Salah!",
+    "skipTyping": "Lewati ketikan",
+    "resume": "Lanjutkan",
+    "resumeTitle": "Lanjutkan perjalananmu?",
+    "resumeMessage": "Kamu berhenti di langkah {current} dari {total}. Lanjutkan dari langkah itu atau ulangi dari awal?",
+    "restart": "Ulangi",
+    "attemptsLeft": "Sisa kesempatan: {n}",
+    "explanationTitle": "Pembahasan",
+    "answer": "Jawaban",
+    "explanation": "Penjelasan",
+    "back": "Kembali",
+    "reviewTitle": "Verifikasi Jawaban",
+    "reviewSubtitle": "Periksa dan lengkapi jawaban essaimu sebelum disimpan sebagai jawaban final.",
+    "reviewQuestion": "Soal {n}",
+    "saveFinal": "Kirim Jawaban Final",
+    "reviewRequired": "Lengkapi semua jawaban essai untuk menyimpan.",
+    "calcBanner": "Bu Aza dan Bu Zia menghasilkan total kotor Rp400.000 untuk hari ini (dari 20 kg × Rp20.000/kg). Berdasarkan dua fungsi komposisi yang telah kamu buat untuk pendapatan bersih mereka, hitunglah pendapatan bersih akhir mereka untuk <i>x</i> = 400.000",
+    "previousAnswerPill": "Jawaban Essay {n}",
+    "dragRetribution": "Retribusi",
+    "dragDiscount": "Diskon",
+    "dragStep1": "Langkah 1",
+    "dragStep2": "Langkah 2",
+    "dragResult": "Hasil untuk <i>x</i> = Rp1.000.000",
+    "dragSave": "Simpan jawaban",
+    "dragSaved": "Tersimpan",
+    "dragConfirmTitle": "Yakin dengan jawabanmu?",
+    "dragConfirmDesc": "Setelah disimpan, jawabanmu tidak bisa diubah lagi. Kamu akan melanjutkan ke pembahasan hasil eksperimen.",
+    "dragConfirmYes": "Ya, Simpan",
+    "dragInvalidCombo": "Kombinasi salah: isi satu kartu retribusi (f) dan satu kartu diskon (g).",
+    "dragRule": "Pilih satu kartu retribusi dan satu kartu diskon, lalu letakkan di dua slot.",
+    "dragInstruction": "Seret kartu retribusi dan diskon ke slot di bawah. Satu retribusi + satu diskon. Urutan mempengaruhi hasil!",
+    "dragYourAnswer": "Ini jawabanmu",
+    "dragNoAnswer": "Belum ada jawaban tersimpan.",
+    "dragFeedbackLow": "Jawabanmu masih jauh dari target. Pendapatan bersih tertinggi diperoleh dari kombinasi <i>(f<sub>2</sub> ∘ g<sub>1</sub>)(x)</i> = Rp912.000. Perhatikan bagaimana urutan komposisi sangat memengaruhi hasil akhirnya!",
+    "dragFeedbackMid": "Jawabanmu sudah mendekati target! Kombinasi yang kamu pilih cukup baik, tetapi masih ada kombinasi yang lebih tinggi, yaitu <i>(f<sub>2</sub> ∘ g<sub>1</sub>)(x)</i> = Rp912.000. Coba bandingkan urutan yang kamu pilih dengan urutan terbaik itu.",
+    "dragFeedbackBest": "Hebat! Jawabanmu tepat — kombinasi <i>(f<sub>2</sub> ∘ g<sub>1</sub>)(x)</i> = Rp912.000 adalah pendapatan tertinggi di antara semua kombinasi. Urutan komposisi terbukti memberikan hasil finansial terbaik.",
+    "experimentCombo": "Kombinasi",
+    "experimentResult": "Pendapatan bersih",
+    "experimentBest": "Tertinggi",
+    "nextReview": "Lanjut ke Verifikasi"
+  },
+  "evaluation": {
+    "title": "Evaluasi",
+    "question": "Soal {current} dari {total}",
+    "submit": "Kirim Jawaban",
+    "back": "Kembali",
+    "next": "Selanjutnya",
+    "allAnswered": "Lengkapi semua jawaban sebelum mengirim.",
+    "retry": "Coba lagi",
+    "backHome": "Kembali ke Beranda",
+    "restart": "Ulangi",
+    "restartTitle": "Ulangi evaluasi?",
+    "restartMessage": "Jawabanmu saat ini akan dihapus dan soal akan diacak ulang.",
+    "restartConfirm": "Ulangi",
+    "reviewTitle": "Jawaban kamu",
+    "yourAnswer": "Jawabanmu",
+    "correctAnswer": "Jawaban benar",
+    "yourScore": "Nilai kamu",
+    "outOf": "{score} dari {total}",
+    "summaryPerfect": "Sempurna! Kamu menguasai komposisi fungsi — semua jawaban benar. Luar biasa!",
+    "summaryGood": "Bagus sekali! Kamu sudah paham komposisi fungsi. Pelajari kembali soal yang salah dan kamu akan sempurna.",
+    "summaryFair": "Cukup baik, tapi masih bisa lebih baik. Kembali ke cerita bengkel Bu Aza dan latih komposisi fungsi lagi.",
+    "summaryLow": "Ayo coba lagi! Kembali ke Eksplorasi, ikuti alur mesin pengupas dan pencuci dengan saksama, lalu ulangi evaluasi."
+  },
+  "teacher": {
+    "title": "Dashboard Guru",
+    "subtitle": "Pantau perkembangan siswa di Desa Talas.",
+    "student": "Siswa",
+    "email": "Email",
+    "empty": "Belum ada siswa. Bagikan tautan pendaftaran ke kelasmu!",
+    "onlyTitle": "Khusus guru",
+    "onlyDesc": "Halaman ini hanya bisa diakses oleh guru.",
+    "students": "siswa",
+    "code": "Kode kelas",
+    "copy": "Salin",
+    "copied": "Tersalin",
+    "createClass": "Buat kelas",
+    "createClassTitle": "Buat kelas baru",
+    "createClassDesc": "Beri nama kelas baru, lalu bagikan kode kelasnya kepada siswa Anda.",
+    "classNamePlaceholder": "Nama kelas, mis. XI-A",
+    "cancel": "Batal",
+    "create": "Buat",
+    "deleteClass": "Hapus kelas",
+    "deleteClassTitle": "Hapus Kelas",
+    "deleteClassDesc": "Apakah kamu yakin ingin menghapus \"{name}\"? Siswa di kelas ini akan dikeluarkan dari kelas, tetapi akun dan data mereka tetap tersimpan.",
+    "deleteClassWarning": "{n} siswa akan kehilangan akses ke kelas ini.",
+    "deleteClassConfirm": "Hapus",
+    "kickStudent": "Keluarkan siswa",
+    "kickStudentTitle": "Keluarkan Siswa",
+    "kickStudentDesc": "Apakah kamu yakin ingin mengeluarkan \"{name}\" dari kelas ini? Data akun dan progresnya tetap tersimpan, tetapi ia tidak akan bisa mengakses kelas ini lagi.",
+    "kickStudentConfirm": "Keluarkan",
+    "dashboard": "Dashboard",
+    "noClassesTitle": "Belum ada kelas",
+    "noClasses": "Buat kelas untuk mendapatkan kode gabung, lalu bagikan ke siswa-mu.",
+    "totalStudents": "Total murid",
+    "status": "Status",
+    "statusNew": "Baru",
+    "statusOngoing": "Berjalan",
+    "statusDone": "Selesai",
+    "explorationCount": "Jml Eksplorasi",
+    "evaluationCount": "Jml Evaluasi",
+    "viewAnswers": "Lihat jawaban",
+    "close": "Tutup",
+    "searchPlaceholder": "Cari nama atau email...",
+    "noStudentsMatch": "Tidak ada siswa yang cocok",
+    "showing": "Menampilkan {from}–{to} dari {total}",
+    "prev": "Sebelumnya",
+    "next": "Berikutnya",
+    "perPage": "per halaman",
+    "collapse": "Sempitkan sidebar",
+    "expand": "Perluas sidebar",
+    "explorationAnswers": "Eksplorasi",
+    "dragAnswer": "Jawaban Drag & Drop",
+    "evalTab": "Evaluasi",
+    "evalScore": "Skor: {correct}/{total}",
+    "attempt": "Eksplorasi {n}",
+    "essayN": "Essay {n}",
+    "evalN": "Eval {n}",
+    "evalAttempt": "Evaluasi {n}",
+    "evalNoAttempts": "Belum ada pengiriman evaluasi.",
+    "noAnswer": "Belum dijawab",
+    "noAttempts": "Belum ada pengiriman eksplorasi.",
+    "submittedAt": "Dikirim {date}"
+  },
+  "audio": {
+    "on": "Nyalakan musik",
+    "off": "Matikan musik"
+  },
+  "money": {
+    "flow": ["Pendapatan Kotor", "Diskon", "Biaya Retribusi"]
+  },
+  "story": {
+    "intro": {
+      "text": "Halo! Selamat datang di sudut kecil Desa Talas milikku. Aku punya talas segar langsung dari ladangku, dan aku ingin menunjukkan bagaimana aku mengubahnya menjadi keripik talas yang renyah. Ayo, biarkan aku mengajakmu berkeliling melihat dua mesinku."
+    },
+    "peeling-machine": {
+      "text": "Yang ini adalah Mesin Pengupasku. Setiap talas masuk, kulitnya langsung terkelupas. Sebanyak apa pun talas yang aku masukkan, sekitar 15% beratnya selalu hilang menjadi kulit, memang begitulah banyaknya kulit yang dimiliki umbi talas secara alami.",
+      "label": "Mesin Pengupas"
+    },
+    "peeling-function": {
+      "text": "Proses ini kuberi nama <i>f</i>, jadi:",
+      "formulaNote": "dengan <i>x</i> adalah berat talas dalam kg."
+    },
+    "washing-machine": {
+      "text": "Dan yang ini adalah Mesin Pencuciku. Setelah dikupas, talas masih menempel getah dan kotoran, jadi aku membilasnya sampai bersih. Setiap kali, sekitar 10% beratnya hilang karena air dan pati yang terbilas, tapi ada juga sedikit yang selalu tersangkut di sikat mesin, sekitar setengah kilogram, berapa pun jumlah talas yang masuk.",
+      "label": "Mesin Pencuci"
+    },
+    "washing-function": {
+      "text": "Proses ini kuberi nama <i>g</i>, jadi:",
+      "formulaNote": "dengan <i>x</i> adalah berat talas dalam kg."
+    },
+    "machine-flow": {
+      "text": "Begini, aku tidak pernah menggunakan satu mesin saja. Aku selalu mengupas dulu, baru mencucinya. Katakanlah hari ini aku punya 10 kg talas. Kita lihat saja hasilnya!"
+    },
+    "quiz-peel": {
+      "text": "Misalnya aku memasukkan 8,5 kg talas. Setelah dikupas, berapa kilogram yang aku dapat?",
+      "explain": "<i>f</i>(8,5) = 0,85 × 8,5 = 7,225 kg"
+    },
+    "quiz-wash": {
+      "text": "Bagus, 7,225 kg tepat sekali! Sekarang aku punya 7,225 kg talas yang sudah dikupas, ayo kita cuci. Berapa kilogram yang tersisa setelah dicuci?",
+      "explain": "<i>g</i>(7,225) = 0,9 × 7,225 − 0,5 = 6,5025 − 0,5 = 6,0025 kg"
+    },
+    "composition-explanation": {
+      "text": "Lihat? Talasku melewati <i>f</i> lebih dulu, lalu hasilnya melewati <i>g</i>. Ketika dua mesin digunakan berurutan seperti ini, kita menyebutnya komposisi fungsi."
+    },
+    "open-gof-machines": {
+      "text": "Lihat bagaimana aku menghitungnya dalam dua langkah terpisah? Ayo kita buat lebih cepat. Jika aku gabungkan kedua mesin menjadi satu rumus, (<i>g ∘ f</i>)(<i>x</i>), bagaimana bentuknya?"
+    },
+    "money-gross": {
+      "text": "Hari ini aku menjual 20 kg keripik talas. Harganya pas Rp20.000 per kg, jadi sebelum hal lainnya, pendapatan kotorku adalah Rp400.000."
+    },
+    "money-intro": {
+      "text": "Tapi tentu saja, aku memberi diskon kepada pelangganku, dan ada juga biaya retribusi pasar yang harus kubayar. Aku selalu menerapkan diskon lebih dulu."
+    },
+    "quiz-discount": {
+      "text": "Jika <i>x</i> adalah pendapatan kotorku dan aku ingin memberi pelangganku diskon 25%. Anggap diskon sebagai proses <i>f</i>, bagaimana fungsi <i>f(x)</i>-nya?",
+      "explain": "Diskon 25% berarti pelanggan membayar 75%, jadi <i>f(x)</i> = 0,75<i>x</i>."
+    },
+    "quiz-retribution": {
+      "text": "Bagus, <i>f(x)</i> = 0,75<i>x</i> tepat sekali! Sekarang aku perlu membayar retribusiku. Besarnya sekitar Rp80.000, jadi fungsinya adalah...",
+      "explain": "Biaya dikurangkan dari pendapatan: <i>g(x)</i> = <i>x</i> − 80.000."
+    },
+    "open-gof-money": {
+      "text": "Kerja bagus! Sekarang kamu tahu. Bisakah kamu membuat fungsi komposisi berdasarkan itu? Aku menerapkan diskon dulu, lalu biaya retribusi."
+    },
+    "rafif-intro": {
+      "text": "Kamu sudah melakukannya dengan baik. Sekarang, perkenalkan temanku, Zia. Dia juga menjual keripik talas seperti aku. Meskipun kami menggunakan mesin yang sama, ada beberapa hal yang berbeda..."
+    },
+    "rafif-story": {
+      "text": "Halo, aku Bu Zia! Hari yang sama, 20 kg yang sama, harga Rp20.000 per kg yang sama, jadi pendapatan kotornya juga sama Rp400.000 dengan Bu Aza. Diskon sama, retribusinya juga sama. Tapi aku melakukannya terbalik. Retribusi dulu, baru diskon."
+    },
+    "open-fog-money": {
+      "text": "Dengan mempertimbangkan konteks tersebut, buatlah fungsi komposisinya."
+    },
+    "open-restu-calc": {
+      "text": "Berapa pendapatan bersih akhir saya jika pendapatan kotor saya hari ini adalah Rp400.000?"
+    },
+    "open-rafif-calc": {
+      "text": "Bagaimana dengan saya, dengan pendapatan kotor hari ini Rp400.000, berapa pendapatan bersih akhir saya?"
+    },
+    "open-difference-explanation": {
+      "text": "Sekarang setelah kamu mengetahui pendapatan bersih akhir mereka, apakah ada perbedaan di antara keduanya? Bisakah kamu menjelaskan alasannya?"
+    },
+    "open-conclusion": {
+      "text": "Berdasarkan konsep fungsi komposisi, kesimpulan apa yang dapat kamu tarik mengenai pendapatan bersih Bu Aza dan Bu Zia?"
+    },
+    "quiz-drag-experiment": {
+      "text": "Nah, sekarang mari kita coba sedikit eksperimen. Kamu punya dua opsi retribusi dan dua opsi diskon. Pasangkan satu kartu retribusi dan satu kartu diskon ke slot di bawah—dan ingat, urutan menentukan hasil! Coba temukan kombinasi yang memberikan pendapatan bersih tertinggi untuk pendapatan kotor <i>x</i> = Rp1.000.000."
+    },
+    "dialogue-experiment-result": {
+      "text": "Untuk <i>x</i> = Rp1.000.000, <i>g<sub>1</sub>(1.000.000)</i> = 960.000, lalu <i>f<sub>2</sub>(960.000)</i> = 0,95 × 960.000 = 912.000. Ini adalah pendapatan kotor tertinggi di antara semua kombinasi — bukti bahwa memilih urutan yang tepat bukan hanya trik matematika, tetapi memiliki dampak finansial yang nyata."
+    }
+  },
+  "quiz": {
+    "eval-1": {
+      "text": "Bu Aza menjalankan usaha keripik talas kecil. Ia memiliki Mesin Irisan yang mengurangi berat talas sebesar 8% (karena pemotongan), dan Mesin Pengering yang menghilangkan tambahan 0,6 kg berat air setelah pengirisan. Misalkan <i>x</i> adalah berat talas (dalam kg) sebelum diproses.\n\nPasangan fungsi mana yang dengan benar memodelkan Mesin Irisan <i>S(x)</i> dan Mesin Pengering <i>D(x)</i>?",
+      "explain": "Pengurangan 8% berarti 92% tersisa, jadi <i>S(x)</i> = 0,92<i>x</i>. Mesin Pengering menghilangkan 0,6 kg, jadi <i>D(x)</i> = <i>x</i> − 0,6.",
+      "options": ["<i>S(x)</i> = 0,92<i>x</i>, <i>D(x)</i> = <i>x</i> − 0,6", "<i>S(x)</i> = <i>x</i> − 0,08, <i>D(x)</i> = 0,6<i>x</i>", "<i>S(x)</i> = 0,08<i>x</i>, <i>D(x)</i> = <i>x</i> + 0,6", "<i>S(x)</i> = 1,08<i>x</i>, <i>D(x)</i> = <i>x</i> − 0,6", "<i>S(x)</i> = 0,92<i>x</i>, <i>D(x)</i> = <i>x</i> + 0,6"]
+    },
+    "eval-2": {
+      "text": "Menggunakan <i>S(x)</i> = 0,92<i>x</i> dan <i>D(x)</i> = <i>x</i> − 0,6 dari Soal 1, Bu Aza mengiris talas terlebih dahulu, baru mengeringkannya. Ekspresi mana yang dengan benar merepresentasikan fungsi komposisi <i>(D ∘ S)(x)</i> dalam bentuk yang disederhanakan?",
+      "explain": "<i>(D ∘ S)(x)</i> = <i>D(S(x))</i> = <i>D(0,92x)</i> = 0,92<i>x</i> − 0,6.",
+      "options": ["<i>(D ∘ S)(x)</i> = 1,52<i>x</i>", "<i>(D ∘ S)(x)</i> = 0,92<i>x</i> − 0,6", "<i>(D ∘ S)(x)</i> = 0,92<i>(x</i> − 0,6<i>)</i>", "<i>(D ∘ S)(x)</i> = <i>x</i> − 0,6 − 0,08<i>x</i>", "<i>(D ∘ S)(x)</i> = 0,92<i>x</i> + 0,6"]
+    },
+    "eval-3": {
+      "text": "Dalam diskusi kelompok, tim Bu Aza menggunakan <i>(D ∘ S)(x)</i> = 0,92<i>x</i> − 0,6 untuk merencanakan produksi. Jika mereka mulai dengan 25 kg talas, berapakah berat akhir setelah pengirisan dan pengeringan?",
+      "explain": "<i>(D ∘ S)(25)</i> = 0,92 × 25 − 0,6 = 23 − 0,6 = 22,4 kg.",
+      "options": ["22,0 kg", "22,4 kg", "22,5 kg", "23,0 kg", "23,6 kg"]
+    },
+    "eval-4": {
+      "text": "Kelompok tersebut sekarang menyelidiki apa yang terjadi jika Bu Aza mengeringkan terlebih dahulu, baru mengiris. Ini menghasilkan komposisi <i>(S ∘ D)(x)</i>.\n\n<i>(S ∘ D)(x)</i> = <i>S(D(x))</i> = <i>S(x − 0,6)</i> = 0,92<i>(x</i> − 0,6<i>)</i> = 0,92<i>x</i> − 0,552\n\nMembandingkan <i>(D ∘ S)(x)</i> = 0,92<i>x</i> − 0,6 dengan <i>(S ∘ D)(x)</i> = 0,92<i>x</i> − 0,552 untuk <i>x</i> = 25 kg, pernyataan mana yang benar?",
+      "explain": "<i>(D ∘ S)(25)</i> = 22,4 dan <i>(S ∘ D)(25)</i> = 22,448. Jadi <i>(D ∘ S)(25)</i> lebih kecil dari <i>(S ∘ D)(25)</i> sebesar 0,048 kg.",
+      "options": ["<i>(S ∘ D)(25)</i> lebih kecil dari <i>(D ∘ S)(25)</i> sebesar 0,6 kg", "<i>(D ∘ S)(25)</i> lebih besar dari <i>(S ∘ D)(25)</i> sebesar 0,6 kg", "<i>(D ∘ S)(25)</i> lebih kecil dari <i>(S ∘ D)(25)</i> sebesar 0,048 kg", "<i>(D ∘ S)(25)</i> lebih besar dari <i>(S ∘ D)(25)</i> sebesar 0,048 kg", "Kedua komposisi menghasilkan nilai yang sama persis"]
+    },
+    "eval-5": {
+      "text": "Berdasarkan eksplorasi pada Soal 2–4, kesimpulan mana tentang komposisi fungsi yang paling akurat?",
+      "explain": "<i>(D ∘ S)(x)</i> ≠ <i>(S ∘ D)(x)</i> secara umum. Urutan operasi berpengaruh — komposisi fungsi tidak komutatif.",
+      "options": [
+        "<i>(D ∘ S)(x)</i> = <i>(S ∘ D)(x)</i> untuk semua nilai <i>x</i>, sehingga urutan operasi tidak berpengaruh.",
+        "<i>(D ∘ S)(x)</i> ≠ <i>(S ∘ D)(x)</i> secara umum, artinya komposisi fungsi tidak komutatif — urutan mesin memengaruhi hasil akhir.",
+        "<i>(D ∘ S)(x)</i> selalu lebih besar dari <i>(S ∘ D)(x)</i> tanpa mempedulikan fungsi yang digunakan.",
+        "Komposisi fungsi hanya berfungsi dengan benar jika kedua fungsi tersebut linear.",
+        "Selisih antara <i>(D ∘ S)(x)</i> dan <i>(S ∘ D)(x)</i> selalu konstan untuk dua fungsi apa pun."
+      ]
+    }
+  },
+  "errors": {
+    "required": "Mohon isi semua kolom",
+    "generic": "Terjadi kesalahan, coba lagi",
+    "network": "Kami tidak dapat terhubung ke server. Periksa koneksi internet kamu dan coba lagi.",
+    "invalidClassCode": "Kode kelas salah. Tanyakan kodenya ke gurumu.",
+    "emailExists": "Email ini sudah terdaftar",
+    "wrongCredentials": "Email atau kata sandi salah",
+    "passwordShort": "Kata sandi minimal 6 karakter",
+    "tooManyRequests": "Terlalu banyak percobaan. Coba lagi dalam {time}.",
+    "waitSecond": "1 detik",
+    "waitSeconds": "{n} detik",
+    "waitMinute": "1 menit",
+    "waitMinutes": "{min} menit",
+    "waitMinSec": "{min} menit {sec} detik"
+  },
+  "exit": {
+    "title": "Keluar dari halaman ini?",
+    "message": "Progresmu tersimpan otomatis. Kamu bisa melanjutkan dari tempat kamu berhenti atau memulai dari awal lagi nanti.",
+    "stay": "Tetap di sini",
+    "leave": "Keluar",
+    "cancel": "Batal"
+  }
+}

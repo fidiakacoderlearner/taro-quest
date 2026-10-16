@@ -1,0 +1,8 @@
+import {
+  OPEN_STEP_IDS,
+  EXPLORE_STEP_IDS,
+  EVAL_STEP_IDS,
+  TOTAL_OPEN_STEPS,
+} from '../../shared/constants.js';
+
+export { OPEN_STEP_IDS, EXPLORE_STEP_IDS, EVAL_STEP_IDS, TOTAL_OPEN_STEPS };

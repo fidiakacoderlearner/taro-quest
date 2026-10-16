@@ -1,0 +1,48 @@
+# dependencies
+node_modules/
+
+# build output
+client/dist/
+
+# database
+server/*.db
+server/*.db-wal
+server/*.db-shm
+
+# logs & env
+*.log
+.env
+.env.local
+
+# vercel
+.vercel/
+
+# asset sources (konversi sudah WebP; asli di-backup di luar repo)
+client/src/assets/raw/
+
+# one-time conversion scripts
+scripts/
+
+# playwright test results & report
+client/test-results/
+client/playwright-report/
+test-results/
+playwright-report/
+
+# one-off local DB inspection scripts
+server/check*.mjs
+# dokumen lomba lokal (tidak masuk repo)
+docs/
+Panduan-*.docx
+
+work!.pdf
+AGENTS.md
+PLAN.md
+CHANGELOG.md
+
+design/
+
+# lokal: dokumen lomba & wireframe (tidak masuk repo)
+TECH_STACK.md
+wireframes/
+tools/

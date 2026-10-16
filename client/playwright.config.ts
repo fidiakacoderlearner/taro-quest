@@ -1,0 +1,32 @@
+import { defineConfig } from '@playwright/test';
+
+export default defineConfig({
+  testDir: './tests/specs',
+  timeout: 120000,
+  retries: 1,
+  use: {
+    baseURL: 'http://localhost:5174',
+    headless: true,
+    viewport: { width: 1440, height: 900 },
+    locale: 'id-ID',
+    channel: process.env.PLAYWRIGHT_CHANNEL || undefined,
+  },
+  webServer: [
+    {
+      command: 'cd .. && npm run start',
+      port: 5002,
+      reuseExistingServer: true,
+      timeout: 30000,
+    },
+    {
+      command: 'cd .. && npm run dev',
+      port: 5174,
+      reuseExistingServer: true,
+      timeout: 30000,
+    },
+  ],
+  projects: [
+    { name: 'chromium', use: { browserName: 'chromium' } },
+  ],
+  reporter: [['list'], ['html', { open: 'never' }]],
+});

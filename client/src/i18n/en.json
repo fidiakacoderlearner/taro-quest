@@ -1,0 +1,370 @@
+﻿{
+  "nav": {
+    "about": "About",
+    "teacher": "Teacher",
+    "logout": "Log out"
+  },
+  "login": {
+    "welcome": "Welcome back!",
+    "join": "Start learning",
+    "email": "Email",
+    "password": "Password",
+    "name": "Full name",
+    "signIn": "Log in",
+    "signUp": "Sign up",
+    "switchToSignup": "Don't have an account? Sign up",
+    "switchToLogin": "Already have an account? Log in",
+    "demoHint": "Teacher demo: teacher@taroquest.com / teacher123 \n Student demo: student@taroquest.com / student123",
+    "emailPlaceholder": "you@school.edu",
+    "namePlaceholder": "Githa Sayang",
+    "classCode": "Class code",
+    "classCodePlaceholder": "Enter class code",
+    "role": "Register as",
+    "roleStudent": "Student",
+    "roleTeacher": "Teacher",
+    "teacherInfo": "Teachers don't need a class code",
+    "showPassword": "Show password",
+    "hidePassword": "Hide password"
+  },
+"joinClass": {
+      "title": "Join Class",
+      "desc": "Enter class code to join",
+      "placeholder": "Enter class code",
+      "join": "Join",
+      "back": "Back",
+      "error": "Invalid class code or expired"
+    },
+  "home": {
+    "greeting": "Hi, {name}",
+    "intro": "Welcome to Taro Quest! Today we are going to explore function composition through Bu Aza's taro chip business.",
+    "cards": {
+      "about": "About",
+      "aboutDesc": "Find out what we are learning today",
+      "exploration": "Exploration",
+      "explorationDesc": "Follow Bu Aza through her two machines",
+      "evaluation": "Evaluation",
+      "evaluationDesc": "Test your understanding at the end"
+    },
+    "start": "Start",
+    "locked": "Finish the previous stage first"
+  },
+  "landing": {
+    "backHome": "Home",
+    "tagline": "Join Bu Aza & Bu Zia on an adventure and solve the mystery of the taro chip machines!",
+    "enter": "Enter",
+    "enterHint": "No account yet? Sign up on the login page.",
+    "aboutTitle": "What is Taro Quest?",
+    "aboutText": "Taro Quest is a maths learning adventure about function composition. You will help Bu Aza and Bu Zia turn taro into chips with magical machines, then arrange the machines in the most profitable order.",
+    "learnTitle": "What you will learn",
+    "stepsTitle": "How to play",
+    "step1Title": "Say hello",
+    "step1Desc": "Open About to see our learning goals.",
+    "step2Title": "Follow the story",
+    "step2Desc": "Explore the taro factory, try the machines, and build the functions.",
+    "step3Title": "Test yourself",
+    "step3Desc": "Answer 5 evaluation questions and see your score.",
+    "sponsorTitle": "Supported by"
+  },
+  "about": {
+    "title": "What we are learning today?",
+    "learningOutcomes": "Learning Outcomes",
+    "learningObjectives": "Learning Objectives",
+    "learningIndicators": "Learning Indicators",
+    "outcomesText": "By the end of Phase F, students will be able to identify inverse functions, function composition, and function transformations to model real-world situations using appropriate functions (linear, quadratic, exponential).",
+    "objectives": [
+      "Students are able to correctly apply the concept of function composition to contextual problems through group discussion activities involving at least two functions.",
+      "Students are able to accurately analyze the properties of function composition through the Taro Quest exploration activity."
+    ],
+    "indicators": [
+      "1.1 Students are able to model contextual problems as appropriate mathematical functions.",
+      "1.2 Students are able to determine the composition of at least two functions based on the mathematical models they have created.",
+      "1.3 Students are able to apply the results of function composition to correctly solve contextual problems through group discussions.",
+      "2.1 Students are able to compare the properties of composite functions identified at each stage of the process.",
+      "2.2 Students are able to accurately conclude the properties of composite functions based on the results of their exploratory activities."
+    ],
+    "outcomesDesc": "What you will be able to do after this lesson",
+    "objectivesDesc": "The goal you will achieve in this lesson",
+    "indicatorsDesc": "The evidence that shows you have learned",
+    "read": "Read",
+    "back": "Back",
+    "backToHome": "Back to Home"
+  },
+  "exploration": {
+    "title": "Exploration",
+    "step": "Step {current} of {total}",
+    "writeAnswer": "Write your answer here...",
+    "saveAnswer": "Save answer",
+    "edit": "Edit",
+    "saved": "Saved",
+    "savedQuestion": "Saved Question {n}/{total}",
+    "continue": "Continue",
+    "correct": "Correct!",
+    "taro": "Taro",
+    "wrong": "Wrong!",
+    "skipTyping": "Skip typing",
+    "resume": "Continue",
+    "resumeTitle": "Resume your journey?",
+    "resumeMessage": "You stopped at step {current} of {total}. Do you want to continue from there or start over?",
+    "restart": "Restart",
+    "attemptsLeft": "Attempts left: {n}",
+    "explanationTitle": "Explanation",
+    "answer": "Answer",
+    "explanation": "Explanation",
+    "back": "Back",
+    "reviewTitle": "Review Your Answers",
+    "reviewSubtitle": "Check and complete your essay answers before saving them as your final answers.",
+    "reviewQuestion": "Question {n}",
+    "saveFinal": "Submit Final Answer",
+    "reviewRequired": "Complete all essay answers to save.",
+    "calcBanner": "Bu Aza and Bu Zia earn a gross total of Rp400,000 for the day (from 20 kg × Rp20,000/kg). Based on the two composite functions you have constructed for their net income, calculate their final net income for <i>x</i> = 400.000",
+    "previousAnswerPill": "Essay {n} Answer",
+    "dragRetribution": "Retribution",
+    "dragDiscount": "Discount",
+    "dragStep1": "Step 1",
+    "dragStep2": "Step 2",
+    "dragResult": "Result for <i>x</i> = Rp1.000.000",
+    "dragSave": "Save answer",
+    "dragSaved": "Saved",
+    "dragConfirmTitle": "Are you sure about your answer?",
+    "dragConfirmDesc": "Once saved, your answer can no longer be changed. You will continue to the discussion of the experiment results.",
+    "dragConfirmYes": "Yes, Save",
+    "dragInvalidCombo": "Wrong combination: fill with one retribution (f) card and one discount (g) card.",
+    "dragRule": "Pick one retribution card and one discount card, then place them into the two slots.",
+    "dragInstruction": "Drag retribution and discount cards to the slots below. One retribution + one discount. Order matters!",
+    "dragYourAnswer": "Your answer",
+    "dragNoAnswer": "No saved answer yet.",
+    "dragFeedbackLow": "Your answer is still far from the target. The highest net income is reached with combination <i>(f<sub>2</sub> ∘ g<sub>1</sub>)(x)</i> = Rp912.000. Notice how the order of composition strongly affects the final result!",
+    "dragFeedbackMid": "Your answer is close to the target! The combination you chose is decent, but there is still a higher one: <i>(f<sub>2</sub> ∘ g<sub>1</sub>)(x)</i> = Rp912.000. Compare your order with that best combination.",
+    "dragFeedbackBest": "Great! Your answer is correct — combination <i>(f<sub>2</sub> ∘ g<sub>1</sub>)(x)</i> = Rp912.000 gives the highest income among all combinations. The order of composition clearly delivers the best financial result.",
+    "experimentCombo": "Combination",
+    "experimentResult": "Net income",
+    "experimentBest": "Highest",
+    "nextReview": "Next: Verification"
+  },
+  "evaluation": {    "title": "Evaluation",
+    "question": "Question {current} of {total}",
+    "submit": "Submit Answers",
+    "back": "Back",
+    "next": "Next",
+    "allAnswered": "Answer all questions before submitting.",
+    "retry": "Try again",
+    "backHome": "Back to Home",
+    "restart": "Restart",
+    "restartTitle": "Restart the evaluation?",
+    "restartMessage": "Your current answers will be cleared and the questions will be shuffled again.",
+    "restartConfirm": "Restart",
+    "reviewTitle": "Your answers",
+    "yourAnswer": "Your answer",
+    "correctAnswer": "Correct answer",
+    "yourScore": "Your score",
+    "outOf": "{score} out of {total}",
+    "summaryPerfect": "Perfect score! You mastered function composition — every answer is correct. Outstanding!",
+    "summaryGood": "Great work! You understand function composition well. Review the questions you missed and you'll be flawless.",
+    "summaryFair": "Not bad, but you can do better. Revisit the story of Bu Aza's workshop and practice composition again.",
+    "summaryLow": "Let's try again! Go back to the Exploration, follow the peeling and washing machines carefully, then retry the evaluation."
+  },
+  "teacher": {
+    "title": "Teacher Dashboard",
+    "subtitle": "Track your students' progress in Taro Quest.",
+    "student": "Student",
+    "email": "Email",
+    "empty": "No students yet. Share the sign-up link with your class!",
+    "onlyTitle": "Teacher only",
+    "onlyDesc": "Only teachers can access this page.",
+    "students": "students",
+    "code": "Class code",
+    "copy": "Copy",
+    "copied": "Copied",
+    "createClass": "Create class",
+    "createClassTitle": "Create a new class",
+    "createClassDesc": "Name your new class, then share its code with your students.",
+    "classNamePlaceholder": "Class name, e.g. XI-A",
+    "cancel": "Cancel",
+    "create": "Create",
+    "deleteClass": "Delete class",
+    "deleteClassTitle": "Delete class",
+    "deleteClassDesc": "Are you sure you want to delete \"{name}\"? Students in this class will be removed from the class but their accounts and data will remain.",
+    "deleteClassWarning": "{n} student(s) will lose access to this class.",
+    "deleteClassConfirm": "Delete",
+    "kickStudent": "Remove student",
+    "kickStudentTitle": "Remove student",
+    "kickStudentDesc": "Are you sure you want to remove \"{name}\" from this class? Data account and progress will remain saved, but they will not be able to access this class again.",
+    "kickStudentConfirm": "Remove",
+    "dashboard": "Dashboard",
+    "noClassesTitle": "No classes yet",
+    "noClasses": "Create a class to get a join code, then share it with your students.",
+    "totalStudents": "Total students",
+    "status": "Status",
+    "statusNew": "New",
+    "statusOngoing": "Ongoing",
+    "statusDone": "Finished",
+    "explorationCount": "Explorations",
+    "evaluationCount": "Evaluations",
+    "viewAnswers": "View answers",
+    "close": "Close",
+    "searchPlaceholder": "Search name or email...",
+    "noStudentsMatch": "No matching students",
+    "showing": "Showing {from}–{to} of {total}",
+    "prev": "Prev",
+    "next": "Next",
+    "perPage": "per page",
+    "collapse": "Collapse sidebar",
+    "expand": "Expand sidebar",
+    "explorationAnswers": "Exploration",
+    "dragAnswer": "Drag & Drop Answer",
+    "evalTab": "Evaluation",
+    "evalScore": "Score: {correct}/{total}",
+    "attempt": "Exploration {n}",
+    "essayN": "Essay {n}",
+    "evalN": "Eval {n}",
+    "evalAttempt": "Evaluation {n}",
+    "evalNoAttempts": "No evaluation submissions yet.",
+    "noAnswer": "Not answered",
+    "noAttempts": "No exploration submissions yet.",
+    "submittedAt": "Submitted {date}"
+  },
+  "audio": {
+    "on": "Turn music on",
+    "off": "Turn music off"
+  },
+  "money": {
+    "flow": ["Gross Earnings", "Discount", "Retribution fees"]
+  },
+  "story": {
+    "intro": {
+      "text": "Hey there! Welcome to my little corner of Taro Valley. I've got fresh taro straight from my field, and I want to show you how I turn it into crispy taro chips. Come on, let me walk you through my two machines."
+    },
+    "peeling-machine": {
+      "text": "This one right here is my Peeling Machine. Every time taro goes in, the skin gets peeled off. No matter how much taro I load in, about 15% of the weight is always lost to peel waste, which is just how much skin a taro root naturally has.",
+      "label": "Peeling Machine"
+    },
+    "peeling-function": {
+      "text": "I call this process <i>f</i>, so:",
+      "formulaNote": "where <i>x</i> is the weight of the taro in kg."
+    },
+    "washing-machine": {
+      "text": "And this one over here is my Washing Machine. After peeling, the taro still has some sticky sap and dirt clinging to it, so I rinse it clean. Each time, it loses about 10% of its weight to water and rinsed-off starch, but there's also a little bit that always gets stuck in the machine's brush, about half a kilogram, no matter how much goes in.",
+      "label": "Washing Machine"
+    },
+    "washing-function": {
+      "text": "I call this process <i>g</i>, so:",
+      "formulaNote": "where <i>x</i> is the weight of the taro in kg."
+    },
+    "machine-flow": {
+      "text": "Now here's the thing, I never use just one machine by itself. I always peel first, then wash. Let's say I've got 10 kg of taro today. We'll find out!"
+    },
+    "quiz-peel": {
+      "text": "Let's say I load in 8,5 kg of taro. After peeling, how many kilograms do I get?",
+      "explain": "<i>f</i>(8,5) = 0,85 × 8,5 = 7,225 kg"
+    },
+    "quiz-wash": {
+      "text": "Nice, 7,225 kg is exactly right! Now that I've got 7,225 kg of peeled taro, let's wash it. How many kilograms do I end up with after washing?",
+      "explain": "<i>g</i>(7,225) = 0,9 × 7,225 − 0,5 = 6,5025 − 0,5 = 6,0025 kg"
+    },
+    "composition-explanation": {
+      "text": "See that? My taro went through <i>f</i> first, then the result went through <i>g</i>. When two machines are used one after another like this, we call it function composition."
+    },
+    "open-gof-machines": {
+      "text": "See how I calculated that in two separate steps? Let's make it faster. If I combine both machines into one formula, (<i>g ∘ f</i>)(<i>x</i>), what does it look like?"
+    },
+    "money-gross": {
+      "text": "Today I sold 20 kg of taro chips. My exact price is Rp20.000 per kg, so before anything else, my gross earnings are Rp400.000."
+    },
+    "money-intro": {
+      "text": "But of course, I give my customers a discount, and there's also a market retribution fee I have to pay. I always apply the discount first."
+    },
+    "quiz-discount": {
+      "text": "If <i>x</i> is my gross earnings and I want to give my customer a 25% discount per kilos. Let's say discount as process <i>f</i>, what's the function of <i>f(x)</i>?",
+      "explain": "A 25% discount means the customer pays 75%, so <i>f(x)</i> = 0,75<i>x</i>."
+    },
+    "quiz-retribution": {
+      "text": "Nice, <i>f(x)</i> = 0,75<i>x</i> is exactly right! Now I need to pay my retribution fees. It's about Rp80.000, so the function is...",
+      "explain": "The fee is subtracted from the earnings: <i>g(x)</i> = <i>x</i> − 80.000."
+    },
+    "open-gof-money": {
+      "text": "Good job! Now you know. Could you create a composite function based on that? I apply the discount first, then the retribution fee."
+    },
+    "rafif-intro": {
+      "text": "You're doing well. So, let me introduce you to my friend, Zia. She's also selling taro chips just like me. Even though we use the same machines, there are some different things..."
+    },
+    "rafif-story": {
+      "text": "Hey, I'm Bu Zia! Same day, same 20 kg, same Rp20.000 price per kg, so same Rp400.000 gross earnings as Bu Aza. Same discount, same retribution fee too. But I do it backwards. Retribution first, then discount."
+    },
+    "open-fog-money": {
+      "text": "With that context in mind, please generate a composite function based on it."
+    },
+    "open-restu-calc": {
+      "text": "How much is my final net income if my gross earnings today are Rp400,000?"
+    },
+    "open-rafif-calc": {
+      "text": "How about me, with today's gross earnings at Rp400,000, what would my final net income be?"
+    },
+    "open-difference-explanation": {
+      "text": "Now that you know their final net incomes, is there a difference between the two? Can you explain why?"
+    },
+    "open-conclusion": {
+      "text": "Based on the concept of composite functions, what conclusions can you draw regarding the net income of Bu Aza and Bu Zia?"
+    },
+    "quiz-drag-experiment": {
+      "text": "Now, let's try a little experiment. You have two retribution options and two discount options. Match one retribution card and one discount card into the slots below—and remember, order matters! Try to find the combination that gives the highest net income for gross earnings <i>x</i> = Rp1.000.000."
+    },
+    "dialogue-experiment-result": {
+      "text": "For <i>x</i> = Rp1.000.000, <i>g<sub>1</sub>(1.000.000)</i> = 960.000, then <i>f<sub>2</sub>(960.000)</i> = 0,95 × 960.000 = 912.000. This is the highest net income among all combinations — proof that choosing the right order is not just a math trick, but has a real financial impact."
+    }
+  },
+  "quiz": {
+    "eval-1": {
+      "text": "Bu Aza runs a small taro chip business. She has a Slicing Machine that reduces the taro's weight by 8% (due to trimming), and a Drying Machine that removes an additional 0,6 kg of water weight after slicing. Let <i>x</i> represent the weight of taro (in kg) before processing.\n\nWhich pair of functions correctly models the Slicing Machine <i>S(x)</i> and the Drying Machine <i>D(x)</i>?",
+      "explain": "A reduction of 8% means 92% remains, so <i>S(x)</i> = 0,92<i>x</i>. The Drying Machine removes 0,6 kg, so <i>D(x)</i> = <i>x</i> − 0,6.",
+      "options": ["<i>S(x)</i> = 0,92<i>x</i>, <i>D(x)</i> = <i>x</i> − 0,6", "<i>S(x)</i> = <i>x</i> − 0,08, <i>D(x)</i> = 0,6<i>x</i>", "<i>S(x)</i> = 0,08<i>x</i>, <i>D(x)</i> = <i>x</i> + 0,6", "<i>S(x)</i> = 1,08<i>x</i>, <i>D(x)</i> = <i>x</i> − 0,6", "<i>S(x)</i> = 0,92<i>x</i>, <i>D(x)</i> = <i>x</i> + 0,6"]
+    },
+    "eval-2": {
+      "text": "Using <i>S(x)</i> = 0,92<i>x</i> and <i>D(x)</i> = <i>x</i> − 0,6 from Question 1, Bu Aza slices the taro first, then dries it. Which expression correctly represents the composition function <i>(D ∘ S)(x)</i> in simplified form?",
+      "explain": "<i>(D ∘ S)(x)</i> = <i>D(S(x))</i> = <i>D(0,92x)</i> = 0,92<i>x</i> − 0,6.",
+      "options": ["<i>(D ∘ S)(x)</i> = 1,52<i>x</i>", "<i>(D ∘ S)(x)</i> = 0,92<i>x</i> − 0,6", "<i>(D ∘ S)(x)</i> = 0,92(<i>x</i> − 0,6)", "<i>(D ∘ S)(x)</i> = <i>x</i> − 0,6 − 0,08<i>x</i>", "<i>(D ∘ S)(x)</i> = 0,92<i>x</i> + 0,6"]
+    },
+    "eval-3": {
+      "text": "In their group discussion, Bu Aza's team uses <i>(D ∘ S)(x)</i> = 0,92<i>x</i> − 0,6 to plan production. If they start with 25 kg of taro, what is the final weight after slicing and drying?",
+      "explain": "<i>(D ∘ S)(25)</i> = 0,92 × 25 − 0,6 = 23 − 0,6 = 22,4 kg.",
+      "options": ["22,0 kg", "22,4 kg", "22,5 kg", "23,0 kg", "23,6 kg"]
+    },
+    "eval-4": {
+      "text": "The group now investigates what happens if Bu Aza dries first, then slices instead. This gives the composition <i>(S ∘ D)(x)</i>.\n\n<i>(S ∘ D)(x)</i> = <i>S(D(x))</i> = <i>S(x − 0,6)</i> = 0,92<i>(x</i> − 0,6<i>)</i> = 0,92<i>x</i> − 0,552\n\nComparing <i>(D ∘ S)(x)</i> = 0,92<i>x</i> − 0,6 with <i>(S ∘ D)(x)</i> = 0,92<i>x</i> − 0,552 for <i>x</i> = 25 kg, which statement is correct?",
+      "explain": "<i>(D ∘ S)(25)</i> = 22,4 and <i>(S ∘ D)(25)</i> = 22,448. So <i>(D ∘ S)(25)</i> is smaller than <i>(S ∘ D)(25)</i> by 0,048 kg.",
+      "options": ["<i>(S ∘ D)(25)</i> is smaller than <i>(D ∘ S)(25)</i> by 0,6 kg", "<i>(D ∘ S)(25)</i> is larger than <i>(S ∘ D)(25)</i> by 0,6 kg", "<i>(D ∘ S)(25)</i> is smaller than <i>(S ∘ D)(25)</i> by 0,048 kg", "<i>(D ∘ S)(25)</i> is larger than <i>(S ∘ D)(25)</i> by 0,048 kg", "Both compositions give exactly the same result"]
+    },
+    "eval-5": {
+      "text": "Based on the exploration in Questions 2–4, which conclusion about function composition is most accurate?",
+      "explain": "<i>(D ∘ S)(x)</i> ≠ <i>(S ∘ D)(x)</i> in general. The order of operations matters — function composition is not commutative.",
+      "options": [
+        "<i>(D ∘ S)(x)</i> = <i>(S ∘ D)(x)</i> for all values of <i>x</i>, so the order of operations does not matter.",
+        "<i>(D ∘ S)(x)</i> ≠ <i>(S ∘ D)(x)</i> in general, meaning function composition is not commutative — the order of the machines affects the final result.",
+        "<i>(D ∘ S)(x)</i> is always greater than <i>(S ∘ D)(x)</i> regardless of the functions used.",
+        "Function composition only works correctly when both functions are linear.",
+        "The difference between <i>(D ∘ S)(x)</i> and <i>(S ∘ D)(x)</i> is always constant for any two functions."
+      ]
+    }
+  },
+  "errors": {
+    "required": "Please fill in all fields",
+    "generic": "Something went wrong, please try again",
+    "network": "We can't reach the server. Please check your internet connection and try again.",
+    "invalidClassCode": "Invalid class code. Ask your teacher for the code.",
+    "emailExists": "This email is already registered",
+    "wrongCredentials": "Incorrect email or password",
+    "passwordShort": "Password must be at least 6 characters",
+    "tooManyRequests": "Too many attempts. Please try again in {time}.",
+    "waitSecond": "1 second",
+    "waitSeconds": "{n} seconds",
+    "waitMinute": "1 minute",
+    "waitMinutes": "{min} minutes",
+    "waitMinSec": "{min} minutes {sec} seconds"
+  },
+  "exit": {
+    "title": "Leave this page?",
+    "message": "Your progress is saved automatically. You can continue where you left off or start over from the beginning later.",
+    "stay": "Stay",
+    "leave": "Leave",
+    "cancel": "Cancel"
+  }
+}

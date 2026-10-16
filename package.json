@@ -1,0 +1,32 @@
+{
+  "name": "taro-quest",
+  "private": true,
+  "type": "module",
+  "version": "1.0.0",
+  "description": "LKPD interactive website - Taro Quest (function composition)",
+  "scripts": {
+    "install:all": "npm --prefix server install && npm --prefix client install",
+    "dev": "concurrently -n server,client -c yellow,cyan \"npm --prefix server run dev\" \"npm --prefix client run dev\"",
+    "build": "npm --prefix client run build",
+    "start": "npm --prefix server run start",
+    "init-db": "npm --prefix server run init-db",
+    "wireframes": "node tools/render-wireframes.mjs",
+    "figma": "node tools/build-figma-html.mjs"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.63.0",
+    "concurrently": "^9.1.2"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "express": "^4.22.3",
+    "express-rate-limit": "^8.7.0",
+    "helmet": "^8.3.0",
+    "jsonwebtoken": "^9.0.2",
+    "pg": "^8.23.0"
+  },
+  "engines": {
+    "node": ">=18.17.0"
+  }
+}
