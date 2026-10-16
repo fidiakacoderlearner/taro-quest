@@ -38,6 +38,21 @@ data uji E2E.
   di Vercel menunjuk ke database Neon yang sama. Sampah E2E tidak dibiarkan
   menumpuk, melainkan dibersihkan otomatis lewat `globalSetup`/
   `globalTeardown` (dan `npm run db:clean` bila perlu).
+- **webServer client E2E hanya menjalankan Vite** — sebelumnya
+  `cd .. && npm run dev` ikut menyalakan server API kedua di port 5002 yang
+  sudah dipakai entri pertama, sehingga selalu gagal `EADDRINUSE`. Kini cukup
+  Vite (port 5174, sudah mem-proxy `/api` ke 5002).
+- **Test `expectStats` yang flaky diperbaiki** — label kartu statistik ("Baru",
+  "Berjalan", "Selesai") juga tampil sebagai badge status di tabel siswa,
+  sehingga locator teks polos berisiko cocok ke 2 elemen (strict mode
+  violation) saat ada siswa berstatus "Baru" dari test paralel. `StatCard`
+  kini punya `data-testid="stat-card"` dan page object mencakupkan selector ke
+  kartu tersebut.
+- **Logo sponsor pindah ke kanan atas** — di **Landing** dan **Login**, posisi
+  logo sponsor dan tombol bahasa ID/EN ditukar: tombol bahasa kini di **kiri
+  atas**, logo sponsor di **kanan atas** (sebelumnya kebalikannya). Class
+  `.sponsor-logos` di `index.css` (aturan absolut kiri-atas) **dihapus** karena
+  tidak pernah terpakai — kedua halaman memakai varian `inline`.
 - **Pembersihan awal** — sampah E2E lama dihapus: user 48 → 4, kelas 23 → 1;
   data demo (4 akun, kelas XI-A) dan riwayat jawaban (11 jawaban, 3 attempt
   eksplorasi, 3 attempt evaluasi) tetap utuh.

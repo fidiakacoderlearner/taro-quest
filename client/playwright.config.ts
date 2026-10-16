@@ -25,7 +25,11 @@ export default defineConfig({
       timeout: 30000,
     },
     {
-      command: 'cd .. && npm run dev',
+      // Cukup Vite: server API sudah disediakan entri di atas, dan
+      // vite.config.js sudah mem-proxy /api ke port 5002. Bila memakai
+      // `cd .. && npm run dev`, server API kedua ikut dinyalakan di port
+      // yang sama sehingga selalu gagal EADDRINUSE.
+      command: 'npm run dev',
       port: 5174,
       reuseExistingServer: true,
       timeout: 30000,

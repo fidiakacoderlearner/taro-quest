@@ -153,13 +153,13 @@ export default function Login() {
         <div className="absolute inset-0 bg-gradient-to-br from-plum-900/70 via-plum-800/55 to-plum-900/70" />
       </div>
 
-      <div className="absolute left-4 top-4 z-20 rounded-xl border border-white/60 bg-white/90 px-3 py-2 shadow-md backdrop-blur">
+      <div className="absolute right-4 top-4 z-20 rounded-xl border border-white/60 bg-white/90 px-3 py-2 shadow-md backdrop-blur">
         <SponsorLogos inline />
       </div>
 
       <button
         onClick={() => setLanguage(lang === 'en' ? 'id' : 'en')}
-        className="absolute right-4 top-4 z-20 rounded-full border border-white/60 bg-white/40 px-3 py-1.5 text-xs font-semibold text-plum-800 backdrop-blur transition-colors hover:bg-white/70 lg:border-white/25 lg:bg-white/10 lg:text-cream lg:hover:bg-white/20"
+        className="absolute left-4 top-4 z-20 rounded-full border border-white/60 bg-white/40 px-3 py-1.5 text-xs font-semibold text-plum-800 backdrop-blur transition-colors hover:bg-white/70 lg:border-white/25 lg:bg-white/10 lg:text-cream lg:hover:bg-white/20"
       >
         {lang === 'en' ? 'ID' : 'EN'}
       </button>

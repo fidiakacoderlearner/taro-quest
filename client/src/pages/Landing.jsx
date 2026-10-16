@@ -43,15 +43,15 @@ export default function Landing() {
       <PageBackground />
 
       <header className="relative z-20 mx-auto flex max-w-6xl items-center justify-between gap-3 px-4 py-4">
-        <div className="rounded-2xl bg-white/90 px-3 py-1.5 shadow-sm ring-1 ring-white/60 backdrop-blur">
-          <SponsorLogos inline />
-        </div>
         <button
           onClick={() => setLanguage(lang === 'en' ? 'id' : 'en')}
           className="rounded-full border border-white/60 bg-white/40 px-3 py-1.5 text-xs font-semibold text-plum-800 backdrop-blur transition-colors hover:bg-white/70"
         >
           {lang === 'en' ? 'ID' : 'EN'}
         </button>
+        <div className="rounded-2xl bg-white/90 px-3 py-1.5 shadow-sm ring-1 ring-white/60 backdrop-blur">
+          <SponsorLogos inline />
+        </div>
       </header>
 
       <main className="relative z-10 mx-auto flex w-full max-w-6xl flex-col gap-8 px-4 pb-16 pt-2 md:gap-12">

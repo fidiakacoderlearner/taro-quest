@@ -8,10 +8,15 @@ export class TeacherDashboardPage {
   }
 
   async expectStats() {
-    await expect(this.page.locator('text=Total murid')).toBeVisible();
-    await expect(this.page.locator('text=Baru')).toBeVisible();
-    await expect(this.page.locator('text=Berjalan')).toBeVisible();
-    await expect(this.page.locator('text=Selesai')).toBeVisible();
+    // Scope ke kartu statistik: label ("Baru", "Berjalan", "Selesai") juga
+    // muncul sebagai badge status di tabel siswa, sehingga locator teks polos
+    // bisa cocok ke 2 elemen (strict mode violation).
+    const stat = (label: string) =>
+      this.page.getByTestId('stat-card').filter({ hasText: label }).first();
+    await expect(stat('Total murid')).toBeVisible();
+    await expect(stat('Baru')).toBeVisible();
+    await expect(stat('Berjalan')).toBeVisible();
+    await expect(stat('Selesai')).toBeVisible();
   }
 
   async selectClass(className: string) {
