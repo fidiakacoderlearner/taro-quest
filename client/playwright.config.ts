@@ -2,6 +2,7 @@ import { defineConfig } from '@playwright/test';
 
 export default defineConfig({
   testDir: './tests/specs',
+  globalSetup: './tests/global-setup',
   globalTeardown: './tests/global-teardown',
   timeout: 120000,
   retries: 1,

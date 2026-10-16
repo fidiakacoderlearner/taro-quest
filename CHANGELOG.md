@@ -5,8 +5,8 @@ Semua perubahan penting pada proyek dicatat di sini. Format mengikuti
 
 ## [1.28.0] — 2026-10-16
 
-Prasyarat rilis lomba: pratinjau tautan (Open Graph), pemisahan database
-dev/produksi, dan pembersihan otomatis data uji E2E.
+Prasyarat rilis lomba: pratinjau tautan (Open Graph) dan pembersihan otomatis
+data uji E2E.
 
 ### Ditambahkan
 
@@ -21,9 +21,11 @@ dev/produksi, dan pembersihan otomatis data uji E2E.
 - **`npm run db:clean`** (`server/clean-db.js`) — bersihkan data uji secara
   manual: user dengan email `*@test.com` dan kelas bernama `Test %`.
   Idempoten, aman dijalankan berulang kali.
-- **Playwright `globalTeardown`** (`client/tests/global-teardown.ts`) —
-  setiap run E2E selesai (lulus maupun gagal) script di atas dijalankan
-  otomatis, sehingga database tidak pernah menumpuk sampah uji antar run.
+- **Playwright `globalSetup` + `globalTeardown`**
+  (`client/tests/global-setup.ts`, `client/tests/global-teardown.ts`, helper
+  `client/tests/db-clean.ts`) — `db:clean` dijalankan **sebelum** run (sisa run
+  yang mati mendadak) dan **sesudah** run (lulus maupun gagal), plus mencetak
+  host database yang dipakai agar selalu sadar E2E menulis ke mana.
 - **Pengaman E2E** (`client/tests/free-ports.mjs`, `npm run e2e`) — membebaskan
   port 5002/5174 dari server lama sebelum test dijalankan, dan
   `reuseExistingServer` untuk server API dinonaktifkan. Mencegah Playwright
@@ -32,13 +34,13 @@ dev/produksi, dan pembersihan otomatis data uji E2E.
 
 ### Diubah
 
-- **Database dev terpisah dari produksi** — `.env` lokal kini menunjuk ke
-  branch Neon `dev`, sedangkan `DATABASE_URL` di Vercel tetap pada branch
-  produksi. Data demo terisolasi dari eksperimen E2E.
-- **Pembersihan awal** — sampah E2E lama dihapus dari kedua database
-  (produksi maupun dev) sebelum pemisahan: user 48 → 4, kelas 23 → 1;
-  data demo (4 akun, kelas XI-A) dan riwayat jawaban (11 jawaban, 3
-  attempt eksplorasi, 3 attempt evaluasi) tetap utuh.
+- **Satu database untuk lokal & produksi** — `.env` lokal dan `DATABASE_URL`
+  di Vercel menunjuk ke database Neon yang sama. Sampah E2E tidak dibiarkan
+  menumpuk, melainkan dibersihkan otomatis lewat `globalSetup`/
+  `globalTeardown` (dan `npm run db:clean` bila perlu).
+- **Pembersihan awal** — sampah E2E lama dihapus: user 48 → 4, kelas 23 → 1;
+  data demo (4 akun, kelas XI-A) dan riwayat jawaban (11 jawaban, 3 attempt
+  eksplorasi, 3 attempt evaluasi) tetap utuh.
 
 ## [1.27.0] — 2026-10-16
 
