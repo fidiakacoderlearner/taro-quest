@@ -3,6 +3,56 @@
 Semua perubahan penting pada proyek dicatat di sini. Format mengikuti
 [Keep a Changelog](https://keepachangelog.com/id-ID/1.1.0/).
 
+## [1.26.0] — 2026-10-16
+
+Nama tim pengembang diganti dari "Rockies" menjadi "teaMate".
+
+### Diubah
+
+- **Watermark "Made with ❤️ by Rockies" → "Made with ❤️ by teaMate"** di tiga
+  tempat: footer Landing (`Landing.jsx`) serta watermark desktop
+  (`text-plum-200/70`) dan mobile (`text-white/70`, `lg:hidden`) di
+  `Login.jsx`. Kata-katanya tetap, hanya nama tim yang berganti.
+
+## [1.25.1] — 2026-10-16
+
+Perbaikan alur logout guru dan test regresinya.
+
+### Diperbaiki
+
+- **Redirect logout sekarang menuju Landing lewat `RequireAuth`** (`App.jsx`).
+  Perbaikan di Sidebar saja tidak cukup: saat `logout()` mengosongkan state
+  auth, `RequireAuth` pada `/teacher` ter-render dengan `isAuthed=false` dan
+  `<Navigate to="/login">`-nya menang atas `navigate('/')`. Sekarang bila flag
+  `cv_logging_out` aktif, `RequireAuth` mengarah ke **`/`** (Landing) alih-alih
+  `/login`. Perilaku tanpa flag (token kedaluwarsa/401) tetap: `/login` +
+  `state.from`.
+- **Flag `cv_logging_out` hanya dibaca saat render, dibersihkan di `useEffect`**
+  — ini penentu sebenarnya. Versi pertama perbaikan menghapus flag di dalam
+  badan render `RequireAuth`; karena **React StrictMode (dev) memanggil fungsi
+  render dua kali**, render pertama membaca `flag='1'` lalu menghapusnya,
+  sehingga render kedua membaca `flag=null` dan justru memilih cabang `/login`
+  — dan render kedua itulah yang di-commit (efek samping di dalam render =
+  bug). Sekarang `RequireAuth` hanya membaca, dan `LandingOrHome` menghapus
+  flag lewat `useEffect` saat `isAuthed=false` (idempoten, aman terhadap render
+  ganda).
+- **Logout dari sidebar dashboard guru tidak lagi mendarat di `/login`**
+  (`components/teacher/Sidebar.jsx`). Handler lama menulis flag
+  `cv_logging_out` ke `localStorage` (padahal `App.jsx` membacanya dari
+  `sessionStorage`), menghapus `cv_token`/`cv_user` secara manual (sehingga
+  state React di `AuthContext` tetap terisi dan `isAuthed` masih `true`), lalu
+  `navigate('/login')`. Sekarang konsisten dengan logout Navbar:
+  `sessionStorage` + `logout()` dari `useAuth()` + `navigate('/')` → mendarat
+  di Landing publik. `logout` yang tidak terpakai di `TeacherDashboard.jsx`
+  dihapus.
+
+### Ditambahkan
+
+- **Test E2E logout guru** (`tests/specs/teacher-journey.spec.ts`): login guru →
+  klik tombol "Keluar" di sidebar → memastikan URL `/` (bukan `/login`),
+  heading Landing tampil, dan `cv_token`/`cv_user` benar-benar kosong. Page
+  object `TeacherDashboardPage.logout()` ditambahkan. Total test 25 → 26.
+
 ## [1.25.0] — 2026-10-16
 
 Penyempurnaan visual halaman publik, popup kuis, dan sponsor.

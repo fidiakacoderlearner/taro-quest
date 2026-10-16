@@ -1,5 +1,6 @@
 import { useEffect } from 'react';
 import { useNavigate } from 'react-router';
+import { useAuth } from '../../context/AuthContext.jsx';
 import { BrandText } from '../Navbar.jsx';
 import { ChartIcon, LogOutIcon, MenuIcon, CloseIcon, ChevronLeftIcon, ChevronRightIcon } from '../icons.jsx';
 
@@ -12,6 +13,7 @@ export default function Sidebar({
   t,
 }) {
   const navigate = useNavigate();
+  const { logout } = useAuth();
 
   const sideBtn = 'flex items-center gap-2 rounded-xl px-4 py-2.5 text-sm font-semibold text-cream/80 transition-colors hover:bg-white/10 hover:text-cream';
 
@@ -71,10 +73,9 @@ export default function Sidebar({
           </div>
           <button
             onClick={() => {
-              localStorage.setItem('cv_logging_out', '1');
-              localStorage.removeItem('cv_token');
-              localStorage.removeItem('cv_user');
-              navigate('/login');
+              sessionStorage.setItem('cv_logging_out', '1');
+              logout();
+              navigate('/');
             }}
             className={`${sideBtn} ${collapsed ? 'lg:justify-center lg:px-0' : ''}`}
           >

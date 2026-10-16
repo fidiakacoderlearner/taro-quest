@@ -24,7 +24,7 @@ function statusOf(s, t) {
 }
 
 export default function TeacherDashboard() {
-  const { token, user, logout, api } = useAuth();
+  const { token, user, api } = useAuth();
   const { t, lang, setLanguage } = useI18n();
   const navigate = useNavigate();
 

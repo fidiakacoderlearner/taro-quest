@@ -121,4 +121,25 @@ test.describe('Teacher Journey', () => {
     // Verifikasi baris Siti hilang dari hasil filter
     await expect(sitiRow).toHaveCount(0, { timeout: 10000 });
   });
+
+  test('Teacher: logout from sidebar goes to landing', async ({ page }) => {
+    const login = new LoginPage(page);
+    const dashboard = new TeacherDashboardPage(page);
+
+    await login.login(TEACHER.email, TEACHER.password);
+    await page.waitForURL('/teacher', { timeout: 10000 });
+
+    // Logout lewat tombol di sidebar (dashboard guru tidak memakai Navbar)
+    await dashboard.logout();
+
+    // Harus mendarat di Landing publik, bukan /login
+    await page.waitForURL('/', { timeout: 10000 });
+    await expect(
+      page.getByRole('heading', { name: /Apa itu Taro Quest|What is Taro Quest/ })
+    ).toBeVisible({ timeout: 10000 });
+
+    // Sesi benar-benar bersih — bukan sekadar pindah halaman
+    expect(await page.evaluate(() => localStorage.getItem('cv_token'))).toBeNull();
+    expect(await page.evaluate(() => localStorage.getItem('cv_user'))).toBeNull();
+  });
 });

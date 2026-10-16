@@ -31,6 +31,14 @@ export class TeacherDashboardPage {
     await this.page.click('text=Lihat Jawaban');
   }
 
+  async logout() {
+    await this.page
+      .locator('aside button')
+      .filter({ hasText: /^\s*(Keluar|Log out)\s*$/ })
+      .first()
+      .click();
+  }
+
   async expectModal() {
     await expect(this.page.locator('[role="dialog"]').or(this.page.locator('.fixed.inset-0')).first()).toBeVisible({ timeout: 5000 });
   }

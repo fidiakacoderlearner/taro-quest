@@ -1,4 +1,5 @@
-﻿import { Navigate, Route, Routes, useLocation } from 'react-router';
+﻿import { useEffect } from 'react';
+import { Navigate, Route, Routes, useLocation } from 'react-router';
 import { useAuth } from './context/AuthContext.jsx';
 import Login from './pages/Login.jsx';
 import Home from './pages/Home.jsx';
@@ -10,6 +11,9 @@ import Landing from './pages/Landing.jsx';
 
 function LandingOrHome() {
   const { isAuthed } = useAuth();
+  useEffect(() => {
+    if (!isAuthed) sessionStorage.removeItem('cv_logging_out');
+  }, [isAuthed]);
   if (!isAuthed) return <Landing />;
   return <StudentHome />;
 }
@@ -17,11 +21,12 @@ function LandingOrHome() {
 function RequireAuth({ children }) {
   const { isAuthed } = useAuth();
   const location = useLocation();
+  const loggingOut = sessionStorage.getItem('cv_logging_out') === '1';
   if (!isAuthed) {
-    const loggingOut = sessionStorage.getItem('cv_logging_out') === '1';
-    if (loggingOut) sessionStorage.removeItem('cv_logging_out');
-    return (
-      <Navigate to="/login" state={loggingOut ? undefined : { from: location }} replace />
+    return loggingOut ? (
+      <Navigate to="/" replace />
+    ) : (
+      <Navigate to="/login" state={{ from: location }} replace />
     );
   }
   return children;
