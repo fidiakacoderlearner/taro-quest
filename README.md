@@ -296,10 +296,8 @@ Dikembangkan oleh tim **teaMate**.
 
 | Peran | Nama | Afiliasi |
 | ----- | ---- | -------- |
-| Ketua / Developer | `[Nama Anggota 1 — lengkapi]` | `[Sekolah/Universitas — lengkapi]` |
-| Anggota | `[Nama Anggota 2 — lengkapi]` | `[—]` |
-| Anggota | `[Nama Anggota 3 — lengkapi]` | `[—]` |
-| Pembimbing | `[Nama Pembimbing — lengkapi]` | `[—]` |
+| Ketua | `Afdhal Fidi Ansori` | `Universitas Riau` |
+| Anggota | `Alya Diandra Febry Dalimunthe` | `Universitas Riau` |
 
 - **Negara**: `[Indonesia — lengkapi]`
 - **Kontak**: `[email@contoh.com — lengkapi]`
