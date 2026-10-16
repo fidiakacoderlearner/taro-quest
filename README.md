@@ -294,7 +294,7 @@ Semua teks cerita/soal/penjelasan/opsi di `client/src/i18n/{en,id}.json` di bawa
 
 Dikembangkan oleh tim **teaMate**.
 
-| Peran | Nama | Afiliasi |
+| Peran | Nama | Universitas |
 | ----- | ---- | -------- |
 | Ketua | `Afdhal Fidi Ansori` | `Universitas Riau` |
 | Anggota | `Alya Diandra Febry Dalimunthe` | `Universitas Riau` |
