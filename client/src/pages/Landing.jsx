@@ -150,7 +150,7 @@ export default function Landing() {
       </main>
 
       <footer className="relative z-10 pb-6 text-center text-xs font-semibold text-cream/90">
-        Made with ❤️ by Rockies
+        Made with ❤️ by teaMate
       </footer>
     </div>
   );

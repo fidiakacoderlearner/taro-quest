@@ -387,7 +387,7 @@ export default function Login() {
 
         <div className="pointer-events-none absolute bottom-4 right-4 z-20 flex items-center gap-4">
           <p className="pointer-events-auto hidden whitespace-nowrap text-xs font-medium text-plum-200/70 select-none lg:block">
-            Made with ❤️ by Rockies
+            Made with ❤️ by teaMate
           </p>
           <Link
             to="/"
@@ -399,7 +399,7 @@ export default function Login() {
       </div>
 
       <p className="fixed bottom-4 left-1/2 z-30 -translate-x-1/2 whitespace-nowrap text-xs font-medium text-white/70 select-none lg:hidden">
-        Made with ❤️ by Rockies
+        Made with ❤️ by teaMate
       </p>
     </div>
   );

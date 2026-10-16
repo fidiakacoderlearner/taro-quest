@@ -64,7 +64,7 @@ lewat optimasi [1.13.0]). Dieksekusi bila pemilik memutuskan.
 ## 15. Panduan Setup DOCX untuk Lomba — SELESAI 2026-08-25
 
 Script `scripts/generate-setup-docx.py` menghasilkan `Panduan-Setup-Taro-Village.docx`
-(TNR 12pt, Consolas 10.5pt, A4). Tim ROCKIES, Ketua Alyas. Semua gitignored.
+(TNR 12pt, Consolas 10.5pt, A4). Tim teaMate, Ketua Alyas. Semua gitignored.
 
 ## 16. Bug: Re-join Kelas Gagal Setelah Siswa Di-kick — SELESAI 2026-08-25
 
