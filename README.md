@@ -1,8 +1,10 @@
-# Taro Quest — LKPD Interaktif (Komposisi Fungsi)
+# Taro Quest — Interactive Worksheet (Function Composition)
 
 Website Lembar Kerja Peserta Didik (LKPD) interaktif bertema **Desa Talas**
-untuk materi **komposisi fungsi** (Fase F). Dibangun dengan alur cerita Bu Aza & Bu Zia, 
-kuis interaktif, dan penyimpanan jawaban siswa agar bisa dipantau guru.
+untuk materi **komposisi fungsi**. Berskala internasional: antarmuka dua bahasa
+(Inggris & Indonesia, default Inggris) sehingga tidak terikat kurikulum
+nasional tertentu. Dibangun dengan alur cerita Bu Aza & Bu Zia, kuis interaktif,
+dan penyimpanan jawaban siswa agar bisa dipantau guru.
 
 ## Struktur
 

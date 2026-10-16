@@ -3,6 +3,37 @@
 Semua perubahan penting pada proyek dicatat di sini. Format mengikuti
 [Keep a Changelog](https://keepachangelog.com/id-ID/1.1.0/).
 
+## [1.27.0] — 2026-10-16
+
+Persiapan lomba internasional: framing netral (tidak terikat kurikulum nasional),
+pembersihan CSP produksi, dan penguatan konfigurasi deploy Vercel.
+
+### Diubah
+
+- **Framing materi jadi berskala internasional** — "LKPD … (Fase F)" menjadi LKPD
+  dua bahasa (Inggris default + Indonesia) tanpa ikatan kurikulum nasional
+  tertentu. `en.json` `outcomesText`: "By the end of **Phase F**" → "By the end
+  of **this unit**" (versi Indonesia tetap "Fase F"). Meta `description` di
+  `client/index.html` kini berbahasa Inggris.
+- **Dokumen** (`README.md`, `AGENTS.md`, `TECH_STACK.md`) diframe ulang mengikuti
+  konteks internasional tersebut.
+- **CSP produksi dibersihkan**: plugin Vite `strip-dev-csp` (`client/vite.config.js`)
+  membuang `ws://localhost:5174 wss://localhost:5174` dari `connect-src` **hanya
+  saat build** — HMR dev tetap jalan karena sumber itu hanya dibutuhkan lokal.
+- **`vercel.json`**: `installCommand` → `npm install && npm run install:all` agar
+  dependency root (`express`, `pg`, dst.) pasti terpasang untuk function `api/`.
+
+### Ditambahkan
+
+- **`client/public/og-image.jpg`** (1200×630, ±101 KB) — dibuat dari screenshot
+  asli halaman Landing versi Inggris (bukan gambar AI) untuk pratinjau link saat
+  dibagikan. Tag OG/Twitter-nya dipasang menyusul setelah URL produksi diketahui.
+
+### Catatan
+
+- Mata uang `Rp` dan koma desimal (`0,85x`) dipertahankan di kedua bahasa sebagai
+  identitas cerita Desa Talas; nama/kelas demo dan logo sponsor tidak diubah.
+
 ## [1.26.0] — 2026-10-16
 
 Nama tim pengembang diganti dari "Rockies" menjadi "teaMate".

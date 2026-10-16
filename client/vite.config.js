@@ -3,8 +3,23 @@ import react from '@vitejs/plugin-react';
 import tailwindcss from '@tailwindcss/vite';
 import path from 'path';
 
+// CSP meta di index.html memuat WebSocket dev (HMR) agar Vite jalan di lokal.
+// Saat build produksi, sumber dev itu dibuang supaya CSP produksi bersih.
+function stripDevCsp() {
+  return {
+    name: 'strip-dev-csp',
+    apply: 'build',
+    transformIndexHtml(html) {
+      return html.replace(
+        "connect-src 'self' ws://localhost:5174 wss://localhost:5174;",
+        "connect-src 'self';"
+      );
+    },
+  };
+}
+
 export default defineConfig({
-  plugins: [react(), tailwindcss()],
+  plugins: [react(), tailwindcss(), stripDevCsp()],
   resolve: {
     alias: {
       '@shared': path.resolve(__dirname, '../shared'),
