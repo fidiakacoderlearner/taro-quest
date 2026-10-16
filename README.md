@@ -296,8 +296,8 @@ Dikembangkan oleh tim **teaMate**.
 
 | Peran | Nama | Universitas |
 | ----- | ---- | -------- |
-| Ketua | `Afdhal Fidi Ansori` | `Universitas Riau` |
-| Anggota | `Alya Diandra Febry Dalimunthe` | `Universitas Riau` |
+| Ketua | `Alya Diandra Febry Dalimunthe` | `Universitas Riau` |
+| Anggota | `Afdhal Fidi Ansori` | `Universitas Riau` |
 
 - **Negara**: `[Indonesia — lengkapi]`
 - **Kontak**: `[email@contoh.com — lengkapi]`
