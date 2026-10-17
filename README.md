@@ -306,7 +306,7 @@ Dikembangkan oleh tim **teaMate**.
 
 - Kementerian Pendidikan Tinggi, Sains, dan Teknologi (Kemendiktisaintek)
 - Universitas Riau (UNRI)
-- `[DMGC — lengkapi kepanjangan]`
+- DMGC — Digital Mathematics Game Competition
 
 > Placeholder `[...]` mohon diganti sebelum pengumpulan.
 
