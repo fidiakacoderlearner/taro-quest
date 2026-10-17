@@ -3,6 +3,32 @@
 Semua perubahan penting pada proyek dicatat di sini. Format mengikuti
 [Keep a Changelog](https://keepachangelog.com/id-ID/1.1.0/).
 
+## [1.28.2] — 2026-10-17
+
+Halaman login dibersihkan dan tata letaknya dipisah: sisi kiri **fixed**, hanya
+sisi kanan (form) yang dapat di-scroll.
+
+### Diubah
+
+- **Login: watermark & logo sponsor dihapus** — teks `Made with ❤️ by teaMate`
+  (versi desktop & mobile) dan container `SponsorLogos` tidak lagi dirender di
+  halaman login. Keduanya tetap tampil di Landing (`Landing.jsx` tidak diubah).
+- **Login: panel kiri kini `fixed`** — grid 2 kolom dilepas, diganti panel
+  `fixed inset-y-0 left-0 w-1/2` (latar + judul "Taro Quest / Machine Mystery"),
+  sedangkan kolom kanan memakai `lg:ml-[50%]` sehingga hanya isi kanan yang
+  bergerak saat form lebih tinggi dari layar.
+- **Login: toggle bahasa & tombol Home ikut `fixed`** — toggle `ID/EN`
+  (kiri-atas) dan tombol `← Beranda` (kiri-bawah) selalu terlihat; satu elemen
+  untuk desktop & mobile (sebelumnya tombol Home ada di kanan-bawah).
+- **README**: label "Logo Sponsor (Landing & Login)" → "(Landing)".
+
+### Diverifikasi
+
+- `npm run build` sukses; E2E Playwright **26 passed** (`PLAYWRIGHT_CHANNEL=chrome`).
+- Pengukuran layout (Playwright): saat halaman di-scroll, posisi `y` panel kiri,
+  toggle, dan tombol Home tetap — hanya form yang bergerak; watermark/logo di
+  login = 0.
+
 ## [1.28.1] — 2026-10-16
 
 Polesan akhir menjelang penjurian: audit responsif & aksesibilitas, perbaikan

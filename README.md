@@ -263,7 +263,7 @@ Taruh gambar di `client/src/assets/` — lihat
 
 Kalau file belum ada → aplikasi memakai placeholder emoji/gradient otomatis (web tetap jalan).
 
-**Logo Sponsor (Landing & Login)**: 3 file ada di `client/src/assets/`
+**Logo Sponsor (Landing)**: 3 file ada di `client/src/assets/`
 (dirender komponen `SponsorLogos.jsx`, tinggi seragam `h-6 sm:h-8`):
 - `logo-kemendiktisaintek.webp`
 - `logo-unri.webp`

@@ -5,7 +5,6 @@ import { useI18n } from '../context/I18nContext.jsx';
 import { useAudio, playBubble } from '../context/AudioContext.jsx';
 import LetterTitle from '../components/LetterTitle.jsx';
 import { EyeIcon, EyeOffIcon } from '../components/icons.jsx';
-import SponsorLogos from '../components/SponsorLogos.jsx';
 
 const loginBg = import.meta.glob('/src/assets/login-bg.{png,jpg,jpeg,svg,webp,gif}', { eager: true });
 const bgUrl = Object.values(loginBg)[0]?.default || null;
@@ -143,7 +142,7 @@ export default function Login() {
     'w-full rounded-2xl border border-plum-200 bg-white/70 px-4 py-3 text-plum-900 placeholder-plum-400 outline-none transition focus:border-plum-500 focus:ring-2 focus:ring-plum-200 lg:border-white/20 lg:bg-white/10 lg:text-cream lg:placeholder-cream/40 lg:focus:border-lilac lg:focus:ring-lilac/30';
 
   return (
-    <div className="relative min-h-screen lg:grid lg:grid-cols-2">
+    <div className="relative min-h-screen">
       <div className="fixed inset-0 overflow-hidden lg:hidden">
         {bgUrl ? (
           <img src={bgUrl} alt="" className="h-full w-full scale-110 object-cover blur-[4px]" />
@@ -153,18 +152,21 @@ export default function Login() {
         <div className="absolute inset-0 bg-gradient-to-br from-plum-900/70 via-plum-800/55 to-plum-900/70" />
       </div>
 
-      <div className="absolute right-4 top-4 z-20 rounded-xl border border-white/60 bg-white/90 px-3 py-2 shadow-md backdrop-blur">
-        <SponsorLogos />
-      </div>
-
       <button
         onClick={() => setLanguage(lang === 'en' ? 'id' : 'en')}
-        className="absolute left-4 top-4 z-20 rounded-full border border-white/60 bg-white/40 px-3 py-1.5 text-xs font-semibold text-plum-800 backdrop-blur transition-colors hover:bg-white/70 lg:border-white/25 lg:bg-white/10 lg:text-cream lg:hover:bg-white/20"
+        className="fixed left-4 top-4 z-30 rounded-full border border-white/60 bg-white/40 px-3 py-1.5 text-xs font-semibold text-plum-800 backdrop-blur transition-colors hover:bg-white/70 lg:border-white/25 lg:bg-white/10 lg:text-cream lg:hover:bg-white/20"
       >
         {lang === 'en' ? 'ID' : 'EN'}
       </button>
 
-      <div className="relative hidden lg:flex lg:flex-col lg:justify-center lg:items-start lg:overflow-hidden lg:px-12 lg:py-10">
+      <Link
+        to="/"
+        className="fixed bottom-4 left-4 z-30 flex items-center gap-1.5 rounded-full border border-white/60 bg-white/40 px-4 py-2 text-sm font-semibold text-plum-800 backdrop-blur transition-transform hover:-translate-x-0.5 hover:bg-white/70 lg:border-white/25 lg:bg-white/10 lg:text-cream lg:hover:bg-white/20"
+      >
+        ← {t('landing.backHome')}
+      </Link>
+
+      <div className="fixed inset-y-0 left-0 z-10 hidden w-1/2 flex-col justify-center items-start overflow-hidden px-12 lg:flex">
         {bgUrl ? (
           <img src={bgUrl} alt="" className="absolute inset-0 h-full w-full scale-110 object-cover blur-[4px]" />
         ) : (
@@ -184,7 +186,7 @@ export default function Login() {
         </div>
       </div>
 
-      <div className="relative z-10 flex min-h-screen flex-col justify-center items-center px-4 py-8 lg:bg-plum-900 lg:px-10 xl:px-14 lg:justify-center">
+      <div className="relative z-10 flex min-h-screen flex-col justify-center items-center px-4 py-8 lg:ml-[50%] lg:bg-plum-900 lg:px-10 xl:px-14 lg:justify-center">
         <div className="mb-8 w-full text-center lg:hidden">
           <LetterTitle
             lines={[{ text: 'Taro Quest' }]}
@@ -384,23 +386,7 @@ export default function Login() {
             </p>
           )}
         </div>
-
-        <div className="pointer-events-none absolute bottom-4 right-4 z-20 flex items-center gap-4">
-          <p className="pointer-events-auto hidden whitespace-nowrap text-xs font-medium text-plum-200/70 select-none lg:block">
-            Made with ❤️ by teaMate
-          </p>
-          <Link
-            to="/"
-            className="pointer-events-auto flex items-center gap-1.5 rounded-full border border-white/60 bg-white/40 px-4 py-2 text-sm font-semibold text-plum-800 backdrop-blur transition-transform hover:-translate-x-0.5 hover:bg-white/70 lg:border-white/25 lg:bg-white/10 lg:text-cream lg:hover:bg-white/20"
-          >
-            ← {t('landing.backHome')}
-          </Link>
-        </div>
       </div>
-
-      <p className="fixed bottom-4 left-1/2 z-30 -translate-x-1/2 whitespace-nowrap text-xs font-medium text-white/70 select-none lg:hidden">
-        Made with ❤️ by teaMate
-      </p>
     </div>
   );
 }
